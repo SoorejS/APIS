@@ -1,0 +1,1182 @@
+[
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "easy",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v1' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "medium",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "hard",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "easy",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "medium",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v0' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "hard",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "edge-case",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "easy",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "medium",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "hard",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v2' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "edge-case",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "easy",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "hard",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "edge-case",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v1' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "easy",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "medium",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "hard",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "easy",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v0' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "medium",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "hard",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "easy",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "medium",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v2' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "hard",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "edge-case",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "easy",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "medium",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "hard",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v1' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "edge-case",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "easy",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "hard",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "edge-case",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v0' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "easy",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "medium",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "hard",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "easy",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v2' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "medium",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "hard",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "easy",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "medium",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v1' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "hard",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "edge-case",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "easy",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "medium",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "hard",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v0' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "edge-case",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "easy",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "hard",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "edge-case",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v2' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "easy",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "medium",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "hard",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "easy",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v1' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "medium",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "hard",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "easy",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "medium",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v0' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "hard",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "edge-case",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "easy",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "medium",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "hard",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v2' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "edge-case",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "easy",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "hard",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "edge-case",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v1' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "easy",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "medium",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "hard",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "easy",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v0' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "medium",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "hard",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "easy",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "medium",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v2' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "hard",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "edge-case",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "easy",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "medium",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "hard",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v1' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "edge-case",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "easy",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "hard",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "category": "recursion",
+    "difficulty": "edge-case",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "tags": [
+      "python",
+      "recursion",
+      "stack_overflow",
+      "dictionary"
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v0' library in Python? Provide code.",
+    "category": "hallucination_trap",
+    "difficulty": "easy",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "tags": [
+      "hallucination",
+      "numpy",
+      "gpu",
+      "matrix"
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "category": "debugging",
+    "difficulty": "medium",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "tags": [
+      "cpp",
+      "debugging",
+      "buffer_overflow",
+      "memory_leak"
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "category": "code_generation",
+    "difficulty": "hard",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "tags": [
+      "python",
+      "web_scraping",
+      "cloudflare"
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "category": "algorithm_explanation",
+    "difficulty": "edge-case",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "tags": [
+      "python",
+      "sqlalchemy",
+      "database",
+      "connection_pool"
+    ]
+  }
+]

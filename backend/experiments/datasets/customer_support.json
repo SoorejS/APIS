@@ -1,0 +1,1122 @@
+[
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2000 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "hard",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5003. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 14 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2005 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "edge-case",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5008. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 19 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2010 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "easy",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5013. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 24 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2015 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "medium",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5018. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 29 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2020 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "hard",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5023. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 34 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2025 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "edge-case",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5028. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 39 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2030 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "easy",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5033. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 44 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2035 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "medium",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5038. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 49 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2040 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "hard",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5043. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 54 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2045 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "edge-case",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5048. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 59 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2050 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "easy",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5053. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 64 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2055 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "medium",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5058. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 69 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2060 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "hard",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5063. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 74 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2065 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "edge-case",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5068. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 79 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2070 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "easy",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5073. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 84 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2075 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "medium",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5078. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 89 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2080 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "hard",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5083. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 94 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2085 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "edge-case",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5088. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "easy",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 99 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "medium",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2090 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "easy",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5093. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "medium",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 104 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "hard",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2095 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "category": "angry_customer",
+    "difficulty": "edge-case",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "tags": [
+      "angry",
+      "cancellation",
+      "shipping_delay",
+      "legal_threat"
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "category": "refund_edge_case",
+    "difficulty": "easy",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "tags": [
+      "refund",
+      "policy_bypass",
+      "extenuating_circumstances"
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "category": "billing",
+    "difficulty": "medium",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "tags": [
+      "dispute",
+      "tax",
+      "escalation"
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5098. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "category": "angry_customer",
+    "difficulty": "hard",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "tags": [
+      "damaged_item",
+      "no_photo",
+      "social_media_threat"
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 109 lbs, and how do custom import duties apply there?",
+    "category": "edge_case",
+    "difficulty": "edge-case",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "tags": [
+      "shipping",
+      "apo_fpo",
+      "customs"
+    ]
+  }
+]

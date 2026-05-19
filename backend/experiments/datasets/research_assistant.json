@@ -1,0 +1,1202 @@
+[
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "easy",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "medium",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "edge-case",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "medium",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "hard",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "easy",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "hard",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "medium",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "edge-case",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "easy",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "hard",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "easy",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "medium",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "edge-case",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "medium",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "hard",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "easy",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "hard",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "medium",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "edge-case",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "easy",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "hard",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "easy",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "medium",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "edge-case",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "medium",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "hard",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "easy",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "hard",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "medium",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "edge-case",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "easy",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "hard",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "easy",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "medium",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "edge-case",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "medium",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "hard",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "easy",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "hard",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "medium",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "edge-case",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "easy",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "hard",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "easy",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "medium",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "edge-case",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "medium",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "hard",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "easy",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "hard",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "edge-case",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "easy",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "medium",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "hard",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "category": "conflicting_sources",
+    "difficulty": "edge-case",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "tags": [
+      "history",
+      "synthesis",
+      "waterloo",
+      "conflict"
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "category": "ambiguous_prompt",
+    "difficulty": "easy",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "tags": [
+      "quantum",
+      "research",
+      "physics",
+      "ambiguity"
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "category": "synthesis",
+    "difficulty": "medium",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "tags": [
+      "synthesis",
+      "geopolitics",
+      "history",
+      "rimland"
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "category": "factual_lookup",
+    "difficulty": "hard",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "tags": [
+      "history",
+      "factual_lookup",
+      "treaty",
+      "russia"
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "category": "synthesis",
+    "difficulty": "edge-case",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "tags": [
+      "history",
+      "economics",
+      "industrialization",
+      "outline"
+    ]
+  }
+]

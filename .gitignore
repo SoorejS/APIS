@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+
+# Docker
+docker-data/
+
+# Python packaging
+dist/
+build/
+*.egg-info/
+
+# Test artifacts
+htmlcov/
+.coverage
+
+# Node (future frontend)
+node_modules/
+.next/
+
+# Alembic cache
+alembic/versions/__pycache__/
+
+# Secrets
+secrets.json
+credentials.json

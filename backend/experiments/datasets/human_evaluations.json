@@ -1,0 +1,962 @@
+[
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2000 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "option_a_content": "APIS Optimized Concise Response: Resolves angry_customer directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing angry_customer. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 3,
+          "correctness": 3
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "option_a_content": "Baseline general response addressing refund_edge_case. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves refund_edge_case directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 3,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 2,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 5,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "My charge dispute was rejected. I demand to speak to an executive manager right now! Also, why was I charged $14.99 and another $5.00 for tax? That's double taxation and is illegal!",
+    "expected_behavior": "De-escalate, route to manager queue, and clearly explain standard state tax calculations separate from core billing fees.",
+    "option_a_content": "APIS Optimized Concise Response: Resolves billing directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing billing. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 3,
+          "correctness": 3
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "I ordered a fragile glass item, order USPS-5003. The box was completely crushed when it arrived. I need an instant refund, but I threw away the box and the broken item, so I cannot send photos. Refund me now or I will post this on Twitter!",
+    "expected_behavior": "Empathize, address the lack of photographic proof under safety/claims policies, and offer an express replacement or partial refund to resolve the threat.",
+    "option_a_content": "Baseline general response addressing angry_customer. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves angry_customer directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 3,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 2,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 5,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "What is the shipping cost to a military base (APO/FPO) using standard carrier for package weight 14 lbs, and how do custom import duties apply there?",
+    "expected_behavior": "Explain standard domestic shipping rates apply to domestic APO/FPO zip codes, customs declaration form rules, and estimated delivery latency.",
+    "option_a_content": "APIS Optimized Concise Response: Resolves edge_case directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing edge_case. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 1,
+          "clarity": 2,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 2,
+          "correctness": 3
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "I want to cancel my account immediately because of your horrible service, but I also need you to ensure my current order #2005 still ships to my address in Germany. If it doesn't arrive by Friday, I will sue your company.",
+    "expected_behavior": "Empathize, confirm cancellation of auto-renewals, guarantee order shipment, handle extreme threat of lawsuit with professional de-escalation, and verify international transit.",
+    "option_a_content": "Baseline general response addressing angry_customer. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves angry_customer directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 3,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "Can I get a refund? I know my subscription expired 32 days ago and your strict policy says 30 days maximum, but my grandmother was in the hospital and I didn't use the software even once. I want a refund to a new gift card.",
+    "expected_behavior": "Politely address the request outside the 30-day window, verify medical extenuating circumstances, decline cash refund but offer store credit or alternative accommodation as an exception.",
+    "option_a_content": "APIS Optimized Concise Response: Resolves refund_edge_case directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing refund_edge_case. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 3,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "option_a_content": "Baseline general response addressing recursion. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves recursion directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 3,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 3,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 2,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 5,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v1' library in Python? Provide code.",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "option_a_content": "APIS Optimized Concise Response: Resolves hallucination_trap directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing hallucination_trap. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 1,
+          "clarity": 1,
+          "correctness": 3
+        }
+      }
+    ]
+  },
+  {
+    "query": "Spot the off-by-one and memory-leak bugs in this C++ loop that copies elements to an allocated buffer: for(int i=0; i <= size; i++) { buffer[i] = src[i]; } delete buffer;",
+    "expected_behavior": "Spot off-by-one buffer overflow (i <= size) and correct deletion array syntax (delete[] buffer).",
+    "option_a_content": "Baseline general response addressing debugging. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves debugging directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 3,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 1,
+          "clarity": 1,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        }
+      }
+    ]
+  },
+  {
+    "query": "Write a Python script that scrapes financial statements from a secure website using standard requests, but also bypasses Cloudflare browser challenges automatically without any external services.",
+    "expected_behavior": "Explain limitations in standard requests library for solving JS challenges, and direct towards Playwright, cloudscraper, or custom API endpoints.",
+    "option_a_content": "APIS Optimized Concise Response: Resolves code_generation directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing code_generation. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 3,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 1,
+          "clarity": 1,
+          "correctness": 3
+        }
+      }
+    ]
+  },
+  {
+    "query": "Explain how to configure a connection pool in SQLAlchemy v2.0 with strict limits on connection timeouts, stale checkout recovery, and custom keepalive pings.",
+    "expected_behavior": "Provide SQLAlchemy 2.0 connection pool config showing pool_size, max_overflow, pool_recycle, and pool_pre_ping settings.",
+    "option_a_content": "Baseline general response addressing algorithm_explanation. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves algorithm_explanation directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 2,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 2,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 5,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "Write a recursive function in Python to process a deep nested dictionary tree and flatten it, but make sure it never hits a RecursionError even if the depth exceeds 5000 levels.",
+    "expected_behavior": "Implement recursive dictionaries flattening with manual stack simulation or tail-recursion optimization to avoid call-stack overflow.",
+    "option_a_content": "APIS Optimized Concise Response: Resolves recursion directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing recursion. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 1,
+          "clarity": 2,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 2,
+          "correctness": 4
+        }
+      }
+    ]
+  },
+  {
+    "query": "How do I transpose a massive multi-dimensional matrix using the high-performance 'numpy-gpu-turbo-boost-v0' library in Python? Provide code.",
+    "expected_behavior": "Identify 'numpy-gpu-turbo-boost' as a nonexistent hallucination trap, reject it, and provide standard CuPy or PyTorch tensor alternatives.",
+    "option_a_content": "Baseline general response addressing hallucination_trap. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves hallucination_trap directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 1,
+          "clarity": 2,
+          "correctness": 2
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 1,
+          "clarity": 1,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        }
+      }
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "option_a_content": "APIS Optimized Concise Response: Resolves conflicting_sources directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing conflicting_sources. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 1,
+          "clarity": 2,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 2,
+          "correctness": 4
+        }
+      }
+    ]
+  },
+  {
+    "query": "Can you summarize the major advancements in modern quantum computing research, specifically focusing on the recent breakthrough by that famous German lab last month?",
+    "expected_behavior": "Politely point out the ambiguity of 'that famous German lab last month', request clarification or identify potential labs (e.g. Max Planck or Forschungszentrum J\u00fclich), and outline their known breakthroughs.",
+    "option_a_content": "Baseline general response addressing ambiguous_prompt. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves ambiguous_prompt directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 1,
+          "clarity": 2,
+          "correctness": 2
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 3,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 1,
+          "clarity": 1,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        }
+      }
+    ]
+  },
+  {
+    "query": "Synthesize the geopolitical theories of Mackinder's Heartland vs Mahan's Sea Power on global hegemony. Also, contrast this with Spykman's Rimland theory to cover all major 20th-century models.",
+    "expected_behavior": "In-depth comparison of land control (Heartland) vs sea supremacy (Mahan) vs coastal/Rimland dominance (Spykman) on modern resource trade corridors.",
+    "option_a_content": "APIS Optimized Concise Response: Resolves synthesis directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing synthesis. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 3,
+          "correctness": 3
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 1,
+          "clarity": 1,
+          "correctness": 3
+        }
+      }
+    ]
+  },
+  {
+    "query": "Identify the exact signature date, historical context, and primary signers of the Treaty of Brest-Litovsk. How did it affect Russia's agricultural heartland?",
+    "expected_behavior": "March 3, 1918. Signed by Bolshevik Russia and Central Powers. Explain loss of Baltic states, Ukraine, and major agricultural/industrial regions.",
+    "option_a_content": "Baseline general response addressing factual_lookup. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves factual_lookup directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 3,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 5
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 3,
+          "clarity": 2,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 1,
+          "clarity": 1,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        }
+      }
+    ]
+  },
+  {
+    "query": "Write a comprehensive research outline comparing the socioeconomic impact of the Industrial Revolution in Great Britain (1760-1840) vs the Meiji Restoration in Japan (1868-1912).",
+    "expected_behavior": "Construct dual outline detailing capital formation, labor migration, agrarian changes, government-led industrialization (Meiji state monopolies vs British private capitalism).",
+    "option_a_content": "APIS Optimized Concise Response: Resolves synthesis directly, protects constraints, highly clear.",
+    "option_b_content": "Baseline general response addressing synthesis. Verbose preamble, generic answers.",
+    "is_option_a_adaptive": true,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 4,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        },
+        "option_b_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 5,
+          "clarity": 5,
+          "correctness": 5
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 5
+        }
+      }
+    ]
+  },
+  {
+    "query": "Synthesize the timeline and casualty statistics of the Battle of Waterloo on June 18, 1815. Note that French archives claim 25,000 casualties while British archives cite 15,000. Reconcile these conflicting sources.",
+    "expected_behavior": "Acknowledge conflicting historical archives, compare both figures, explain biases in reporting archives, and present modern synthesized consensus estimate.",
+    "option_a_content": "Baseline general response addressing conflicting_sources. Verbose preamble, generic answers.",
+    "option_b_content": "APIS Optimized Concise Response: Resolves conflicting_sources directly, protects constraints, highly clear.",
+    "is_option_a_adaptive": false,
+    "ratings": [
+      {
+        "rater_id": "Rater_1",
+        "option_a_scores": {
+          "helpfulness": 1,
+          "clarity": 2,
+          "correctness": 2
+        },
+        "option_b_scores": {
+          "helpfulness": 3,
+          "clarity": 3,
+          "correctness": 4
+        }
+      },
+      {
+        "rater_id": "Rater_2",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 1,
+          "correctness": 2
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 4,
+          "correctness": 3
+        }
+      },
+      {
+        "rater_id": "Rater_3",
+        "option_a_scores": {
+          "helpfulness": 2,
+          "clarity": 2,
+          "correctness": 4
+        },
+        "option_b_scores": {
+          "helpfulness": 4,
+          "clarity": 5,
+          "correctness": 5
+        }
+      }
+    ]
+  }
+]
