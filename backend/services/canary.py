@@ -126,25 +126,28 @@ class CanaryService:
         rollback = False
         reason = ""
 
-        # 1. Thumbs down rate increases significantly (e.g. margin of 10%)
-        if cand_neg > base_neg + 0.10:
-            rollback = True
-            reason = f"thumbs_down rate increased (candidate: {cand_neg:.2f} vs baseline: {base_neg:.2f})"
-        
-        # 2. Correctness score decreases significantly
-        elif cand_metrics.get("correctness", 1.0) < base_metrics.get("correctness", 1.0) - 0.10:
-            rollback = True
-            reason = f"correctness score dropped (candidate: {cand_metrics.get('correctness'):.2f} vs baseline: {base_metrics.get('correctness'):.2f})"
+        # Enforce statistical significance: require at least 5 interactions on candidate version
+        cand_total = cand_metrics.get("total_interactions", 5)
+        if cand_total >= 5:
+            # 1. Thumbs down rate increases significantly (e.g. margin of 10%)
+            if cand_neg > base_neg + 0.10:
+                rollback = True
+                reason = f"thumbs_down rate increased (candidate: {cand_neg:.2f} vs baseline: {base_neg:.2f})"
+            
+            # 2. Correctness score decreases significantly
+            elif cand_metrics.get("correctness", 1.0) < base_metrics.get("correctness", 1.0) - 0.10:
+                rollback = True
+                reason = f"correctness score dropped (candidate: {cand_metrics.get('correctness'):.2f} vs baseline: {base_metrics.get('correctness'):.2f})"
 
-        # 3. Latency increases significantly (more than 50% increase AND more than 100ms)
-        elif cand_lat > base_lat * 1.5 and (cand_lat - base_lat) > 100:
-            rollback = True
-            reason = f"latency increased significantly (candidate: {cand_lat:.1f}ms vs baseline: {base_lat:.1f}ms)"
+            # 3. Latency increases significantly (more than 50% increase AND more than 100ms)
+            elif cand_lat > base_lat * 1.5 and (cand_lat - base_lat) > 100:
+                rollback = True
+                reason = f"latency increased significantly (candidate: {cand_lat:.1f}ms vs baseline: {base_lat:.1f}ms)"
 
-        # 4. Specific category regressions
-        elif cand_metrics.get("category_regression", False):
-            rollback = True
-            reason = "detected regression in key query category"
+            # 4. Specific category regressions
+            elif cand_metrics.get("category_regression", False):
+                rollback = True
+                reason = "detected regression in key query category"
 
         if rollback:
             deployment.deployment_state = "rolled_back"
