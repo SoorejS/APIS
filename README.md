@@ -13,8 +13,11 @@
 
 *   🛡️ **Zero-Regression Gating**: Ensures candidate prompt rewrites improve overall metrics without regressing quality across any individual product category.
 *   🤖 **Closed-Loop PromptOps**: Aggregates negative feedback signals (thumbs down, incorrect, verbosity), detects quality degradation patterns, and triggers automated iteration.
-*   🧠 **Failure Memory context injection**: Records rejected candidates and their regression causes in PostgreSQL, dynamically injecting them into subsequent optimization loops to prevent repeating past mistakes.
-*   🧹 **Prompt Normalizer Service**: Replaces verbose manual prompt additions with clean, structurally normalized Markdown rewrites, reducing token overhead.
+*   🧠 **Failure Memory Context Injection**: Records rejected candidates and their regression causes in PostgreSQL, dynamically injecting them into subsequent optimization loops to prevent repeating past mistakes.
+*   🧹 **Prompt Normalizer Service**: Replaces verbose manual prompt additions with clean, structurally normalized Markdown rewrites, preventing prompt bloat and runaway token consumption.
+*   🐤 **Canary Prompt Rollouts**: Safely routes production traffic gradually to candidate prompts (`candidate` -> `canary_10` -> `canary_25` -> `canary_50` -> `active`) with automated rollbacks if performance regressions occur.
+*   🔌 **Multi-Provider Registry**: Support for `Gemini`, `OpenAI`, `Claude`, and local `Ollama` models. Includes fallback mechanisms (e.g. automatically routing to Gemini if OpenAI rates limit/fail).
+*   📊 **Drift Detection Engine**: Aggregates statistical indicators over rolling 1-day, 7-day, and 30-day windows to detect silent performance drift and trigger alerts.
 *   🤝 **Double-Blind Human Evaluation**: Standardized multi-rater rating CLI to mathematically measure human-alignment deltas on a $1-5$ scale.
 
 ---
@@ -29,12 +32,23 @@ flowchart TD
     classDef db fill:#F59E0B,stroke:#D97706,stroke-width:2px,color:#fff;
 
     %% Nodes & Links
-    User([User Client]) -->|/generate| Runtime[APIS Runtime API]:::primary
-    Runtime -->|Interaction Log| Postgres[(PostgreSQL Database)]:::db
-    User -->|Thumbs Down| Ingest[Feedback Ingestion API]:::primary
+    User([User Client]) -->|1. /generate| Router[Canary Traffic Router]:::primary
+    Router -->|Split Traffic| Baseline[Active Baseline Prompt]:::primary
+    Router -->|Split Traffic| Canary[Canary Candidate Prompt]:::primary
+    
+    Baseline --> Registry[Multi-Provider Registry]:::secondary
+    Canary --> Registry
+    
+    Registry -->|API completion or Fallback| Model[LLM Endpoint: Gemini/OpenAI/Claude/Ollama]:::primary
+    Model -->|Save Interaction| Postgres[(PostgreSQL Database)]:::db
+    
+    User -->|2. /feedback| Ingest[Feedback Ingestion API]:::primary
     Ingest --> Postgres
     
     Postgres -->|Signal Engine| Aggregator[Pattern Aggregation & Detection]:::secondary
+    Postgres -->|Drift Aggregations| DriftEngine[Drift Detection Engine]:::secondary
+    DriftEngine -->|Store Alert| DriftAlerts[(Drift Alerts Database)]:::db
+    
     Aggregator -->|ShouldIterate| Iteration[Iteration Engine]:::secondary
     Iteration -->|Normalizer| Normalizer[PromptNormalizerService]:::secondary
     Normalizer -->|Zero-Regression Check| Gating{Multi-Judge Gating}:::primary
@@ -78,7 +92,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-### 3. Run Unit & Integration Tests (25 passing)
+### 3. Run Unit & Integration Tests (31 passing)
 ```bash
 venv\Scripts\pytest
 ```
@@ -89,13 +103,35 @@ Experience the complete PromptOps lifecycle (Baseline query $\rightarrow$ Thumbs
 venv\Scripts\python run_demo.py
 ```
 
-### 5. Launch Interactive Human Evaluation study CLI
+### 5. Run Automated Verification Scripts
+Verify specific architectural properties of Canary rollouts, provider failovers, drift detection, prompt bloat, and poisoning attacks:
+```bash
+# Verify canary rollout success paths:
+venv\Scripts\python verify_canary_success.py
+
+# Verify canary rollback attacks:
+venv\Scripts\python verify_canary_rollback.py
+
+# Verify multi-provider runtime fallback:
+venv\Scripts\python verify_provider_fallback.py
+
+# Verify drift detection engine and noisy false positive resistance:
+venv\Scripts\python verify_drift_detection.py
+
+# Verify prompt normalizer resilience under bloat attack:
+venv\Scripts\python verify_prompt_normalizer.py
+
+# Verify feedback poisoning & adversarial signal robustness:
+venv\Scripts\python verify_feedback_poisoning.py
+```
+
+### 6. Launch Interactive Human Evaluation study CLI
 Grade anonymous double-blind responses directly in your terminal:
 ```bash
 python -m backend.experiments.human_eval --interactive
 ```
 
-### 6. Launch Backend Dev Server
+### 7. Launch Backend Dev Server
 ```bash
 venv\Scripts\uvicorn backend.main:app --reload --port 8000
 ```

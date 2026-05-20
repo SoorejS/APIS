@@ -12,29 +12,34 @@ APIS is designed around a decoupled, state-machine architecture that splits the 
 flowchart TD
     subgraph Hot Path (Runtime Execution)
         Client([User Client]) -->|1. Generate request| API[Runtime Endpoint /generate]
-        API -->|2. Get active version| DB[(PostgreSQL Store)]
+        API -->|2. Check Canary Routing| CanaryRouter[CanaryService]
+        CanaryRouter -->|Select Active or Canary| DB[(PostgreSQL Store)]
         API -->|3. Compile layers| Compiler[PromptCompilerService]
-        Compiler -->|4. Request completion| LLM[LLM Provider - Gemini]
-        LLM -->|5. Return response & interaction_id| API
-        API -->|6. Send back to user| Client
+        Compiler -->|4. Request completion| Registry[ProviderRegistry]
+        Registry -->|5. Execute call & Failover| Providers[Gemini/OpenAI/Claude/Ollama]
+        Providers -->|6. Return response & interaction_id| API
+        API -->|7. Send back to user| Client
     end
 
     subgraph Cold Path (Continuous Optimization)
-        Client -->|7. Thumbs down signal| FeedbackAPI[Feedback Endpoint /feedback]
-        FeedbackAPI -->|8. Store feedback| DB
+        Client -->|8. Feedback signal| FeedbackAPI[Feedback Endpoint /feedback]
+        FeedbackAPI -->|9. Store feedback| DB
         
-        DB -->|9. Pull records| SigEngine[SignalEngine]
-        SigEngine -->|10. Classify queries| Classifier[QueryClassifier]
-        SigEngine -->|11. Evaluate policy rules| PolicyEngine[ShouldIterate]
+        DB -->|10. Pull records| SigEngine[SignalEngine]
+        SigEngine -->|11. Classify queries| Classifier[QueryClassifier]
+        SigEngine -->|12. Evaluate policy rules| PolicyEngine[ShouldIterate]
         
-        PolicyEngine -->|12. Trigger optimization| IterEngine[IterationEngine]
-        IterEngine -->|13. Structurally format| Normalizer[PromptNormalizerService]
-        Normalizer -->|14. Zero-regression suite| Evaluator[EvaluatorService]
+        PolicyEngine -->|13. Trigger optimization| IterEngine[IterationEngine]
+        IterEngine -->|14. Structurally format| Normalizer[PromptNormalizerService]
+        Normalizer -->|15. Zero-regression suite| Evaluator[EvaluatorService]
         
-        Evaluator -->|15. Validate metrics| Gating{Quality Gate}
-        Gating -->|Promote| DB
+        Evaluator -->|16. Validate metrics| Gating{Quality Gate}
+        Gating -->|Promote to Canary/Active| DB
         Gating -->|Reject & Log| FailureMem[FailureMemoryService]
         FailureMem -->|Inject avoidance context| IterEngine
+        
+        DB -->|17. Aggregate metrics| Drift[DriftDetector]
+        Drift -->|18. Persist warnings| Alerts[(Drift Alerts Database)]
     end
 ```
 
@@ -44,7 +49,9 @@ flowchart TD
 
 ### 2.1. The Hot Path: Runtime & Compilation
 
-*   **`Runtime API (/generate)`**: Ingests user inputs, locates the current `ACTIVE` prompt version for the specified namespace in PostgreSQL, compiles the effective prompt, calls the Gemini model, logs the raw interaction, and returns the response alongside a unique `interaction_id`.
+*   **`Runtime API (/generate)`**: Ingests user inputs, locates the current `ACTIVE` prompt version or evaluates canary split routing, compiles the effective prompt, calls the resolved provider model, logs the raw interaction, and returns the response alongside a unique `interaction_id`.
+*   **`CanaryService`**: Manages progressive prompt rollouts (`candidate` $\rightarrow$ `canary_10` $\rightarrow$ `canary_25` $\rightarrow$ `canary_50` $\rightarrow$ `active`). Directs a subset of production traffic to the canary candidate and evaluates metrics at each stage. Instantly rolls back rollout traffic to $0\%$ and flags the deployment as `rolled_back` if feedback rates, correctness scores, or average latencies degrade.
+*   **`ProviderRegistry`**: Acts as an LLM provider router mapping namespace policies to active backend adapters (`GeminiProvider`, `OpenAIProvider`, `ClaudeProvider`, `OllamaProvider`). If the primary provider call fails due to timeouts, invalid keys, or rate limits, it transparently falls back to the configured fallback provider (e.g. Gemini).
 *   **`PromptCompilerService`**: Merges structural elements to construct a unified system prompt:
     $$\text{Effective Prompt} = \text{Base System Instructions} + \text{Constraints Layer} + \text{Runtime Context}$$
     This guarantees constraints are never modified by the iteration layer and prevents prompt injection or structural degradation.
@@ -55,6 +62,7 @@ flowchart TD
 *   **`SignalEngine`**: Processes a rolling window of recent interactions and signals. It calculates the negative feedback rate per query category:
     $$\text{Negative Rate} = \frac{\text{Negative Signal Count}}{\text{Total Interactions in Window}}$$
 *   **`QueryClassifier`**: Categorizes user queries (e.g., `billing`, `legal`, `coding`, `general`) to isolate prompt performance metrics per domain.
+*   **`DriftDetector`**: Continuously monitors rolling metrics (thumbs_down rate, average latency, response verbosity, and incorrectness rates) over 1-day, 7-day, and 30-day windows. Automatically logs warnings in `drift_alerts` with severity levels (`low`, `medium`, `high`, `critical`) and actionable recommendations.
 *   **`PolicyEngine (ShouldIterate)`**: Evaluates whether a namespace should undergo optimization. Rules check if:
     *   The total number of category signals exceeds a minimum threshold (e.g., $N \ge 50$).
     *   The negative signal rate exceeds the threshold (e.g., $\ge 30\%$).
@@ -75,10 +83,12 @@ APIS relies on a PostgreSQL schema to coordinate state transitions:
 
 | Table Name | Description | Key Relationships |
 | :--- | :--- | :--- |
-| **`prompt_namespaces`** | Isolates system domains (e.g., support, coding). Stores active constraints and iteration policies. | One-to-Many with `prompt_versions`, `interactions`, `quality_patterns`. |
+| **`prompt_namespaces`** | Isolates system domains (e.g., support, coding). Stores active constraints and iteration policies. | One-to-Many with `prompt_versions`, `interactions`, `quality_patterns`, `prompt_deployments`, `drift_alerts`. |
 | **`prompt_versions`** | Immutable log of all system prompt versions (`active`, `candidate`, `rejected`). | Many-to-One with `prompt_namespaces`. |
 | **`interactions`** | Database of all production queries, outputs, latencies, and category labels. | Many-to-One with `prompt_versions`. |
 | **`feedback_signals`** | Logs user interactions (thumbs up/down). | Many-to-One with `interactions`. |
 | **`quality_patterns`** | Aggregated feedback metrics per category. Used to trigger iteration. | Many-to-One with `prompt_namespaces`. |
+| **`prompt_deployments`** | Coordinates canary rollout phases (`canary_10`, `canary_25`, `canary_50`), current percentage splits, and rollback reasons. | Many-to-One with `prompt_namespaces` and `prompt_versions`. |
+| **`drift_alerts`** | Persisted log of historical metrics drifts, computed deltas, severity thresholds, and recommendations. | Many-to-One with `prompt_namespaces`. |
 | **`evaluation_runs`** | Test runs comparing baseline vs candidate prompt performance. | References active and candidate `prompt_versions`. |
 | **`failure_memories`** | Persistent history of rejected candidate optimizations. | Many-to-One with `prompt_namespaces`. |
