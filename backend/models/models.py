@@ -115,4 +115,38 @@ class FailureMemory(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
 
+class PromptDeployment(Base):
+    __tablename__ = "prompt_deployments"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    namespace_id = Column(UUID(as_uuid=True), ForeignKey("prompt_namespaces.id"), nullable=False)
+    prompt_version_id = Column(UUID(as_uuid=True), ForeignKey("prompt_versions.id"), nullable=False)
+    rollout_percentage = Column(Integer, default=0, nullable=False)
+    deployment_state = Column(String(50), nullable=False, default="candidate")
+    baseline_metrics = Column(JSON, nullable=True)
+    current_metrics = Column(JSON, nullable=True)
+    rollback_reason = Column(Text, nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+    namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])
+    prompt_version = relationship("PromptVersion", foreign_keys=[prompt_version_id])
+
+
+class DriftAlert(Base):
+    __tablename__ = "drift_alerts"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    namespace_id = Column(UUID(as_uuid=True), ForeignKey("prompt_namespaces.id"), nullable=False)
+    category = Column(String(100), nullable=False)
+    drift_type = Column(String(100), nullable=False)
+    severity = Column(String(50), nullable=False)
+    recommendation = Column(String(50), nullable=False)
+    resolved = Column(Boolean, default=False, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])
+
+
+
 

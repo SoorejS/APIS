@@ -1,12 +1,17 @@
 from google import genai
+import os
 from backend.core.config import settings
 
 _client = None
 
 def _get_client():
     global _client
-    if _client is None and settings.GEMINI_API_KEY:
-        _client = genai.Client(api_key=settings.GEMINI_API_KEY)
+    api_key = os.getenv("GEMINI_API_KEY") or settings.GEMINI_API_KEY
+    if _client is None and api_key:
+        try:
+            _client = genai.Client(api_key=api_key)
+        except Exception:
+            _client = None
     return _client
 
 
@@ -15,11 +20,13 @@ class GeminiProvider:
     async def generate(prompt: str) -> str:
         client = _get_client()
         if client is None:
-            # No API key — return mock so tests can run without credentials
-            return "[MOCK] APIS backend is running. Set GEMINI_API_KEY in .env for real responses."
+            return f"[MOCK Gemini] response for: {prompt[:60]}"
 
-        response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=prompt,
-        )
-        return response.text
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=prompt,
+            )
+            return response.text
+        except Exception as e:
+            raise Exception(f"Gemini execution error: {e}")

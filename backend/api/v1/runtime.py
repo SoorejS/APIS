@@ -4,7 +4,7 @@ from backend.db.database import get_db
 from backend.models.models import PromptNamespace, PromptVersion, Interaction
 from backend.schemas.schemas import RuntimeGenerateRequest, RuntimeGenerateResponse
 from backend.services.compiler import PromptCompilerService
-from backend.providers.gemini import GeminiProvider
+from backend.providers.registry import registry
 from backend.services.classifier import QueryClassifier
 import time
 
@@ -44,10 +44,17 @@ async def generate_runtime(request: RuntimeGenerateRequest, db: Session = Depend
         db.commit()
         db.refresh(active_version)
         
+    selected_version = active_version
+    # Check if there is an active canary deployment
+    from backend.services.canary import CanaryService
+    deployment = CanaryService.get_active_deployment(db, namespace.id)
+    if deployment and CanaryService.should_route_to_canary(deployment):
+        selected_version = db.query(PromptVersion).filter(PromptVersion.id == deployment.prompt_version_id).first() or active_version
+
     # 3. Compile Effective Prompt
     effective_prompt = PromptCompilerService.compile_effective_prompt(
         namespace=namespace,
-        active_version=active_version,
+        active_version=selected_version,
         runtime_context=request.context_variables,
         user_query=request.query
     )
@@ -59,8 +66,16 @@ async def generate_runtime(request: RuntimeGenerateRequest, db: Session = Depend
     print(effective_prompt)
     print("="*50 + "\n")
     
-    # 4. Call LLM Provider
-    response_text = await GeminiProvider.generate(effective_prompt)
+    # 4. Call LLM Provider with optional fallback support
+    policy = namespace.iteration_policy or {}
+    provider_name = policy.get("provider", "gemini")
+    fallback_name = policy.get("fallback_provider", "gemini")
+    
+    response_text = await registry.generate_with_fallback(
+        provider_name=provider_name,
+        prompt=effective_prompt,
+        fallback_name=fallback_name
+    )
     
     latency_ms = int((time.time() - start_time) * 1000)
     
@@ -70,12 +85,12 @@ async def generate_runtime(request: RuntimeGenerateRequest, db: Session = Depend
     # 5. Log Interaction
     interaction = Interaction(
         namespace_id=namespace.id,
-        prompt_version_id=active_version.id,
+        prompt_version_id=selected_version.id,
         session_id=request.session_id,
         user_query=request.query,
         ai_response=response_text,
         latency_ms=latency_ms,
-        provider="gemini-2.0-flash",
+        provider=provider_name,
         query_category=query_category
     )
     db.add(interaction)
