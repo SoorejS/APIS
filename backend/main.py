@@ -1,7 +1,8 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from backend.api.v1 import runtime, feedback, prompts, iterations, evaluations
+from backend.api.v1 import runtime, feedback, prompts, iterations, evaluations, dashboard
 from backend.db.database import engine, Base
 
 
@@ -19,12 +20,22 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+# Enable CORS for Next.js dashboard
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # ── Routers ────────────────────────────────────────────────────────────────
 app.include_router(runtime.router,  prefix="/api/v1/runtime",  tags=["Runtime"])
 app.include_router(feedback.router, prefix="/api/v1/feedback", tags=["Feedback"])
 app.include_router(prompts.router,  prefix="/api/v1",          tags=["Admin — Prompts"])
 app.include_router(iterations.router, prefix="/api/v1",          tags=["Admin — Iterations"])
 app.include_router(evaluations.router, prefix="/api/v1",          tags=["Admin — Evaluations"])
+app.include_router(dashboard.router, prefix="/api/v1/dashboard", tags=["Dashboard"])
 
 
 @app.get("/health", tags=["Health"])

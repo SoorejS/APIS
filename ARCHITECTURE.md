@@ -1,94 +1,233 @@
-# APIS Architecture Specification
+# APIS: Flagship Architecture & Diagrams
 
-This document provides a comprehensive technical overview of the **APIS (Adaptive Prompt Intelligence System)** architecture, outlining how the dynamic PromptOps lifecycle operates end-to-end.
+This document contains the architectural diagrams for the APIS (Adaptive Prompt Infrastructure System) project. To ensure transparency and trust with senior engineers, we favor absolute honesty regarding system maturity over hype.
+
+**Architecture Maturity Legend:**
+- 🟢 **Implemented:** Live in production / MVP codebase.
+- 🟡 **Simulated / Validated:** Concept mathematically proven via the Phase 7 Deterministic Simulator, but not yet running as a live asynchronous daemon.
+- 🔵 **Roadmap:** Aspirational components slated for future versions.
 
 ---
 
-## 1. System Topology Overview
+## 1. High-Level System Architecture
 
-APIS is designed around a decoupled, state-machine architecture that splits the hot path (user query execution) from the cold path (feedback ingestion, pattern analysis, and automated prompt iteration).
+### Explanation
+This diagram answers "What is APIS?" at a glance. It illustrates how client traffic flows through the implemented APIS Gateway, routing to various LLM providers, while telemetry is captured in PostgreSQL. The Adaptive Engine (simulated in v1) handles canary deployments, candidate generation, and drift detection.
 
+### Design Rationale
+The goal is to show APIS as an *infrastructure layer* sitting securely between the client and the LLM providers, clearly distinguishing the live runtime vs the simulated orchestration loops.
+
+### Mermaid Source
+```mermaid
+graph TD
+    classDef client fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    classDef apis fill:#e0f2fe,stroke:#0284c7,stroke-width:3px;
+    classDef provider fill:#f3e8ff,stroke:#9333ea,stroke-width:2px;
+    classDef simulated fill:#fef08a,stroke:#ca8a04,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef db fill:#fef3c7,stroke:#d97706,stroke-width:2px;
+
+    Client[Client Applications]:::client -->|API Request| Gateway[🟢 APIS Gateway / Router]:::apis
+    
+    Gateway -->|Forward| LLMs[🟢 LLM Providers]:::provider
+    LLMs -->|Response| Gateway
+    Gateway -->|Response + Telemetry| Client
+    
+    Gateway -.->|Async Telemetry Logs| DB[(🟢 PostgreSQL DB)]:::db
+    
+    subgraph "APIS Adaptive Engine"
+        DB -.->|Read Metrics| Worker[🟡 Background Worker]:::simulated
+        Worker -.->|Trigger Drift Alert| Generator[🟡 Candidate Generator]:::simulated
+        Worker -.->|Manage State| Canary[🟡 Auto-Promotion Manager]:::simulated
+        Generator -.->|Write Candidate| DB
+        Canary -.->|Update Route Rules| DB
+    end
+    
+    DB -.->|Pull Config| Gateway
+```
+
+---
+
+## 2. Runtime Execution Flow
+
+### Explanation
+This diagram details the exact request path when a user hits the APIS endpoint. It proves backend depth by showing the router logic, fallback chains, and how telemetry is captured.
+
+### Design Rationale
+This maps to the FastAPI routing logic implemented in the backend, focusing on the resilient execution paths (fallback chains and fractional hashing).
+
+### Mermaid Source
 ```mermaid
 flowchart TD
-    subgraph Hot Path (Runtime Execution)
-        Client([User Client]) -->|1. Generate request| API[Runtime Endpoint /generate]
-        API -->|2. Check Canary Routing| CanaryRouter[CanaryService]
-        CanaryRouter -->|Select Active or Canary| DB[(PostgreSQL Store)]
-        API -->|3. Compile layers| Compiler[PromptCompilerService]
-        Compiler -->|4. Request completion| Registry[ProviderRegistry]
-        Registry -->|5. Execute call & Failover| Providers[Gemini/OpenAI/Claude/Ollama]
-        Providers -->|6. Return response & interaction_id| API
-        API -->|7. Send back to user| Client
-    end
+    classDef startend fill:#1e293b,stroke:#fff,color:#fff;
+    classDef decision fill:#fef08a,stroke:#ca8a04;
+    classDef action fill:#e0e7ff,stroke:#4f46e5;
+    
+    Start((Incoming API Req)):::startend --> Resolve[🟢 Resolve Namespace & Rules]:::action
+    Resolve --> CheckCanary{🟢 Is Canary Active?}:::decision
+    
+    CheckCanary -- Yes --> Hash[🟢 Hash UserID % 100]:::action
+    Hash -- "< Rollout %" --> PickCanary[🟢 Load Canary Prompt]:::action
+    Hash -- ">= Rollout %" --> PickActive[🟢 Load Active Prompt]:::action
+    CheckCanary -- No --> PickActive
+    
+    PickCanary --> ProviderSelect[🟢 Select Primary Provider]:::action
+    PickActive --> ProviderSelect
+    
+    ProviderSelect --> CallLLM[🟢 Execute LLM Call]:::action
+    CallLLM --> SuccessCheck{🟢 Success?}:::decision
+    
+    SuccessCheck -- No --> Fallback[🟢 Execute Provider Fallback]:::action
+    Fallback --> CallLLM
+    
+    SuccessCheck -- Yes --> Parse[🟢 Parse Output & Check Constraints]:::action
+    Parse --> AsyncLog[🟢 Fire Background Task:<br/>Save Interaction to DB]:::action
+    AsyncLog --> End((Return Response)):::startend
+```
 
-    subgraph Cold Path (Continuous Optimization)
-        Client -->|8. Feedback signal| FeedbackAPI[Feedback Endpoint /feedback]
-        FeedbackAPI -->|9. Store feedback| DB
+---
+
+## 3. Prompt Evolution Lifecycle
+
+### Explanation
+This diagram explains the state machine of a prompt. It shows how user feedback translates into a new prompt version, goes through offline evaluation, hits production via a canary, and is finally promoted.
+
+### Design Rationale
+The state transitions represent strict enumerations enforced in the Postgres schema today, while the actual LLM-as-a-judge automated evaluation is clearly marked as roadmap.
+
+### Mermaid Source
+```mermaid
+stateDiagram-v2
+    direction LR
+    
+    state "🟢 Production Feedback" as Feedback
+    state "🟢 Draft / Candidate" as Draft
+    state "🔵 Offline LLM-as-Judge Eval" as Eval
+    state "🟢 Active Canary (10%)" as Canary
+    state "🟢 Fully Promoted (Active)" as Active
+    state "🟢 Rejected / Rolled Back" as Rejected
+
+    [*] --> Feedback: Collect Signal
+    Feedback --> Draft: 🟡 Background Generator
+    Draft --> Eval: 🔵 Automated Test
+    
+    Eval --> Rejected: Failed Benchmarks
+    Eval --> Canary: Passed Benchmarks
+    
+    Canary --> Canary: 🔵 Auto-Monitor 1h
+    Canary --> Rejected: 🟢 Latency/Error Spike (DB Enforced)
+    Canary --> Active: 🟢 Metrics Stable (DB Enforced)
+    
+    Active --> [*]
+```
+
+---
+
+## 4. Canary Safety System
+
+### Explanation
+This diagram highlights the gradual rollout and safety nets. It proves to infrastructure engineers that APIS treats prompts with the same rigor as compiled backend binaries.
+
+### Design Rationale
+It distinguishes the *implemented* fractional routing and rollback execution from the *roadmap* automated scheduler that promotes traffic percentages chronologically.
+
+### Mermaid Source
+```mermaid
+graph LR
+    classDef version fill:#f8fafc,stroke:#94a3b8;
+    classDef traffic fill:#bfdbfe,stroke:#3b82f6;
+    classDef rollback fill:#fee2e2,stroke:#ef4444,stroke-width:2px;
+    classDef success fill:#dcfce3,stroke:#22c55e,stroke-width:2px;
+
+    V1[🟢 v1.0 Active<br/>90% Traffic]:::version
+    V2[🟢 v1.1 Candidate<br/>10% Traffic]:::traffic
+    
+    V1 --- Monitor((🟡 Monitor Error Rate))
+    V2 --- Monitor
+    
+    Monitor -->|🔵 Stable 1h<br/>(Cron Scheduler)| T25[🟢 v1.1 Canary 25%]:::traffic
+    Monitor -->|🟢 Latency Spike!| RB[🟢 Automatic Rollback<br/>v1.0 = 100%]:::rollback
+    
+    T25 -->|🔵 Stable 1h| T50[🟢 v1.1 Canary 50%]:::traffic
+    T50 -->|🔵 Stable 1h| Full[🟢 v1.1 Promoted<br/>100% Traffic]:::success
+```
+
+---
+
+## 5. Proposed Drift Detection Architecture (Validated via Simulation)
+
+### Explanation
+This details the proposed observability and anomaly detection pipeline. It shows how the system notices "hidden degradation" (like creeping verbosity or hallucinations) before users complain.
+
+### Design Rationale
+Since the active 5-minute cron job is heavily simulated in the current MVP (via Phase 7 evaluation scripts), this diagram is labeled as a validated proposal rather than a live production component.
+
+### Mermaid Source
+```mermaid
+sequenceDiagram
+    participant DB as 🟢 Postgres (Telemetry)
+    participant Worker as 🟡 Drift Detection Cron
+    participant Engine as 🟡 Adaptive Engine
+    participant UI as 🟢 Dashboard Alerting
+
+    loop Every 5 Minutes
+        Worker->>DB: Query Last 1000 Interactions
+        Worker->>Worker: Calculate Hallucination & Thumbs Down %
         
-        DB -->|10. Pull records| SigEngine[SignalEngine]
-        SigEngine -->|11. Classify queries| Classifier[QueryClassifier]
-        SigEngine -->|12. Evaluate policy rules| PolicyEngine[ShouldIterate]
-        
-        PolicyEngine -->|13. Trigger optimization| IterEngine[IterationEngine]
-        IterEngine -->|14. Structurally format| Normalizer[PromptNormalizerService]
-        Normalizer -->|15. Zero-regression suite| Evaluator[EvaluatorService]
-        
-        Evaluator -->|16. Validate metrics| Gating{Quality Gate}
-        Gating -->|Promote to Canary/Active| DB
-        Gating -->|Reject & Log| FailureMem[FailureMemoryService]
-        FailureMem -->|Inject avoidance context| IterEngine
-        
-        DB -->|17. Aggregate metrics| Drift[DriftDetector]
-        Drift -->|18. Persist warnings| Alerts[(Drift Alerts Database)]
+        opt Metric > Baseline + 3σ (Threshold Breach)
+            Worker->>UI: Dispatch Drift Alert (Critical)
+            Worker->>Engine: Trigger Auto-Heal Loop
+            Engine->>DB: Fetch specific failing inputs
+            Engine->>Engine: LLM: Generate Candidate Prompt targeting failures
+            Engine->>DB: Save new Candidate Version
+            Engine->>Engine: Trigger Canary Rollout
+        end
     end
 ```
 
 ---
 
-## 2. Core Architectural Components
+## 6. Evaluation Framework
 
-### 2.1. The Hot Path: Runtime & Compilation
+### Explanation
+This diagram validates the research credibility of Phase 7. It visually explains the methodology of the 12,000-interaction simulation, the injected drift event, and how the Baseline and Adaptive systems diverged.
 
-*   **`Runtime API (/generate)`**: Ingests user inputs, locates the current `ACTIVE` prompt version or evaluates canary split routing, compiles the effective prompt, calls the resolved provider model, logs the raw interaction, and returns the response alongside a unique `interaction_id`.
-*   **`CanaryService`**: Manages progressive prompt rollouts (`candidate` $\rightarrow$ `canary_10` $\rightarrow$ `canary_25` $\rightarrow$ `canary_50` $\rightarrow$ `active`). Directs a subset of production traffic to the canary candidate and evaluates metrics at each stage. Instantly rolls back rollout traffic to $0\%$ and flags the deployment as `rolled_back` if feedback rates, correctness scores, or average latencies degrade.
-*   **`ProviderRegistry`**: Acts as an LLM provider router mapping namespace policies to active backend adapters (`GeminiProvider`, `OpenAIProvider`, `ClaudeProvider`, `OllamaProvider`). If the primary provider call fails due to timeouts, invalid keys, or rate limits, it transparently falls back to the configured fallback provider (e.g. Gemini).
-*   **`PromptCompilerService`**: Merges structural elements to construct a unified system prompt:
-    $$\text{Effective Prompt} = \text{Base System Instructions} + \text{Constraints Layer} + \text{Runtime Context}$$
-    This guarantees constraints are never modified by the iteration layer and prevents prompt injection or structural degradation.
+### Design Rationale
+By showing two parallel timelines diverging after a specific event ("Drift Injected"), it instantly communicates the rigorous A/B testing methodology used to prove the system's mathematical viability.
 
-### 2.2. The Feedback Loop: Signal Engine & Policy
+### Mermaid Source
+```mermaid
+flowchart TD
+    classDef setup fill:#f1f5f9,stroke:#64748b;
+    classDef drift fill:#fef08a,stroke:#eab308,stroke-width:2px;
+    classDef base fill:#fee2e2,stroke:#ef4444;
+    classDef adapt fill:#dcfce3,stroke:#22c55e;
 
-*   **`Feedback API (/feedback)`**: Associates user signals (e.g., thumbs_up, thumbs_down, too_long) with specific `interaction_id` keys in PostgreSQL.
-*   **`SignalEngine`**: Processes a rolling window of recent interactions and signals. It calculates the negative feedback rate per query category:
-    $$\text{Negative Rate} = \frac{\text{Negative Signal Count}}{\text{Total Interactions in Window}}$$
-*   **`QueryClassifier`**: Categorizes user queries (e.g., `billing`, `legal`, `coding`, `general`) to isolate prompt performance metrics per domain.
-*   **`DriftDetector`**: Continuously monitors rolling metrics (thumbs_down rate, average latency, response verbosity, and incorrectness rates) over 1-day, 7-day, and 30-day windows. Automatically logs warnings in `drift_alerts` with severity levels (`low`, `medium`, `high`, `critical`) and actionable recommendations.
-*   **`PolicyEngine (ShouldIterate)`**: Evaluates whether a namespace should undergo optimization. Rules check if:
-    *   The total number of category signals exceeds a minimum threshold (e.g., $N \ge 50$).
-    *   The negative signal rate exceeds the threshold (e.g., $\ge 30\%$).
-    *   The namespace is outside its cooldown window (e.g., 24 hours since the last promotion).
-
-### 2.3. The Iteration Loop: Generation & Gating
-
-*   **`IterationEngine`**: Orchestrates optimization. It pulls negative feedback patterns and recent user queries for the degraded category, and queries Gemini to generate a candidate prompt rewrite targeting the reported issues.
-*   **`PromptNormalizerService`**: Parses and aligns candidate prompt structures. It deduplicates redundant rules, ensures strict Markdown formatting, and enforces system length boundaries to prevent prompt bloat.
-*   **`EvaluatorService`**: Performs offline testing. It compiles a benchmark suite of historical queries and runs the candidate version against the active baseline using a **Multi-Judge Ensemble** (Strict Compliance, Technical Utility, and Clarity & Conciseness judges).
-*   **`FailureMemoryService`**: Acts as a safety net. If a candidate is rejected during offline evaluation due to category regressions, the attempted fix and failure reason are logged to the database and injected directly into the next candidate generation iteration to prevent repeating errors.
+    Setup[🟢 Simulate 12,000 Interactions<br/>Across 4 Domains]:::setup --> Parallel
+    
+    subgraph Parallel Simulation
+        direction LR
+        S1[🟢 Static Baseline System]
+        S2[🟢 APIS Adaptive System]
+    end
+    
+    Parallel --> Step750((🟢 Step 750:<br/>Inject Deterministic Drift)):::drift
+    
+    Step750 --> BaseDegrade[🟢 Baseline correctness<br/>drops to 52% and stays dead]:::base
+    Step750 --> AdaptHeal[🟢 APIS detects drift,<br/>rolls out canary, heals to 98%]:::adapt
+    
+    BaseDegrade --> Report[🟢 Generate CSV & Markdown Eval Report]
+    AdaptHeal --> Report
+```
 
 ---
 
-## 3. Database Schema Specification
+## 🎨 Exportable SVG/Figma-Ready Plan
 
-APIS relies on a PostgreSQL schema to coordinate state transitions:
+To convert these Mermaid diagrams into best-in-class assets for your repository or slide decks:
 
-| Table Name | Description | Key Relationships |
-| :--- | :--- | :--- |
-| **`prompt_namespaces`** | Isolates system domains (e.g., support, coding). Stores active constraints and iteration policies. | One-to-Many with `prompt_versions`, `interactions`, `quality_patterns`, `prompt_deployments`, `drift_alerts`. |
-| **`prompt_versions`** | Immutable log of all system prompt versions (`active`, `candidate`, `rejected`). | Many-to-One with `prompt_namespaces`. |
-| **`interactions`** | Database of all production queries, outputs, latencies, and category labels. | Many-to-One with `prompt_versions`. |
-| **`feedback_signals`** | Logs user interactions (thumbs up/down). | Many-to-One with `interactions`. |
-| **`quality_patterns`** | Aggregated feedback metrics per category. Used to trigger iteration. | Many-to-One with `prompt_namespaces`. |
-| **`prompt_deployments`** | Coordinates canary rollout phases (`canary_10`, `canary_25`, `canary_50`), current percentage splits, and rollback reasons. | Many-to-One with `prompt_namespaces` and `prompt_versions`. |
-| **`drift_alerts`** | Persisted log of historical metrics drifts, computed deltas, severity thresholds, and recommendations. | Many-to-One with `prompt_namespaces`. |
-| **`evaluation_runs`** | Test runs comparing baseline vs candidate prompt performance. | References active and candidate `prompt_versions`. |
-| **`failure_memories`** | Persistent history of rejected candidate optimizations. | Many-to-One with `prompt_namespaces`. |
+1. **GitHub README:** Paste the raw ` ```mermaid ` blocks directly into `README.md`. GitHub natively renders them in dark/light mode matching the user's OS preference.
+2. **Figma / Slide Decks:** 
+   - Open the [Mermaid Live Editor](https://mermaid.live).
+   - Paste the code blocks above.
+   - Click **Actions -> Export SVG**.
+   - Drag the SVG into Figma. Because it's an SVG, all shapes and text will be fully editable vectors. You can then apply your specific APIS brand colors (e.g., your Next.js dashboard's exact HSL values) to make them look identical to the UI.
