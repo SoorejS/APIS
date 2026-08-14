@@ -36,19 +36,19 @@ export function DriftFilters() {
 
   return (
     <div className="flex items-center space-x-2">
-      <Select value={currentNamespace} onValueChange={(val) => handleFilterChange("namespace_id", val)}>
+      <Select value={currentNamespace} onValueChange={(val) => handleFilterChange("namespace_id", val || "all")}>
         <SelectTrigger className="w-[180px]">
           <SelectValue placeholder="Namespace" />
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="all">All Namespaces</SelectItem>
           {!isLoading && namespaces?.map((ns: any) => (
-            <SelectItem key={ns.id} value={ns.id}>{ns.name}</SelectItem>
+            <SelectItem key={ns.id} value={String(ns.id)}>{ns.name}</SelectItem>
           ))}
         </SelectContent>
       </Select>
 
-      <Select value={currentSeverity} onValueChange={(val) => handleFilterChange("severity", val)}>
+      <Select value={currentSeverity} onValueChange={(val) => handleFilterChange("severity", val || "all")}>
         <SelectTrigger className="w-[150px]">
           <SelectValue placeholder="Severity" />
         </SelectTrigger>
@@ -61,7 +61,7 @@ export function DriftFilters() {
         </SelectContent>
       </Select>
 
-      <Select value={currentCategory} onValueChange={(val) => handleFilterChange("category", val)}>
+      <Select value={currentCategory} onValueChange={(val) => handleFilterChange("category", val || "all")}>
         <SelectTrigger className="w-[150px]">
           <SelectValue placeholder="Category" />
         </SelectTrigger>

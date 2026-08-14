@@ -33,19 +33,19 @@ export function PromptFilters() {
 
   return (
     <div className="flex items-center space-x-2">
-      <Select value={currentNamespace} onValueChange={(val) => handleFilterChange("namespace_id", val)}>
+      <Select value={currentNamespace} onValueChange={(val) => handleFilterChange("namespace_id", val || "all")}>
         <SelectTrigger className="w-[200px]">
           <SelectValue placeholder="Select Namespace" />
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="all">All Namespaces</SelectItem>
           {!isLoading && namespaces?.map((ns: any) => (
-            <SelectItem key={ns.id} value={ns.id}>{ns.name}</SelectItem>
+            <SelectItem key={ns.id} value={String(ns.id)}>{ns.name}</SelectItem>
           ))}
         </SelectContent>
       </Select>
       
-      <Select value={currentStatus} onValueChange={(val) => handleFilterChange("status", val)}>
+      <Select value={currentStatus} onValueChange={(val) => handleFilterChange("status", val || "all")}>
         <SelectTrigger className="w-[180px]">
           <SelectValue placeholder="Filter Status" />
         </SelectTrigger>

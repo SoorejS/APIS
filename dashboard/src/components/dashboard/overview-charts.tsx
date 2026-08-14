@@ -28,7 +28,7 @@ export function OverviewCharts() {
   // Enhance provider distribution with colors
   const providerDataWithColors = providerDistribution.map((p: any, i: number) => ({
     ...p,
-    fill: `hsl(var(--chart-${(i % 5) + 1}))`
+    fill: `var(--chart-${(i % 5) + 1})`
   }));
 
   return (
@@ -43,19 +43,19 @@ export function OverviewCharts() {
               <AreaChart data={requestsOverTime} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                 <defs>
                   <linearGradient id="colorRequests" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.3} />
-                    <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0} />
+                    <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.3} />
+                    <stop offset="95%" stopColor="var(--primary)" stopOpacity={0} />
                   </linearGradient>
                 </defs>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--muted-foreground))" strokeOpacity={0.2} />
+                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--muted-foreground)" strokeOpacity={0.2} />
                 <XAxis dataKey="time" stroke="#888888" fontSize={12} tickLine={false} axisLine={false} />
                 <YAxis stroke="#888888" fontSize={12} tickLine={false} axisLine={false} tickFormatter={(value) => `${value}`} />
                 <Tooltip 
-                  contentStyle={{ backgroundColor: "hsl(var(--background))", borderColor: "hsl(var(--border))", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
-                  itemStyle={{ color: "hsl(var(--foreground))" }}
-                  cursor={{ stroke: "hsl(var(--muted-foreground))", strokeWidth: 1, strokeDasharray: "3 3" }}
+                  contentStyle={{ backgroundColor: "var(--background)", borderColor: "var(--border)", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
+                  itemStyle={{ color: "var(--foreground)" }}
+                  cursor={{ stroke: "var(--muted-foreground)", strokeWidth: 1, strokeDasharray: "3 3" }}
                 />
-                <Area type="monotone" dataKey="requests" stroke="hsl(var(--primary))" strokeWidth={2} fillOpacity={1} fill="url(#colorRequests)" activeDot={{ r: 6, strokeWidth: 0, fill: "hsl(var(--primary))" }} />
+                <Area type="monotone" dataKey="requests" stroke="var(--primary)" strokeWidth={2} fillOpacity={1} fill="url(#colorRequests)" activeDot={{ r: 6, strokeWidth: 0, fill: "var(--primary)" }} />
               </AreaChart>
             </ResponsiveContainer>
           </div>
@@ -69,13 +69,13 @@ export function OverviewCharts() {
           <div className="h-[300px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={providerDataWithColors} layout="vertical" margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="hsl(var(--muted-foreground))" strokeOpacity={0.2} />
+                <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="var(--muted-foreground)" strokeOpacity={0.2} />
                 <XAxis type="number" hide />
                 <YAxis dataKey="name" type="category" axisLine={false} tickLine={false} stroke="#888888" fontSize={12} width={80} />
                 <Tooltip 
-                  contentStyle={{ backgroundColor: "hsl(var(--background))", borderColor: "hsl(var(--border))", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
-                  itemStyle={{ color: "hsl(var(--foreground))" }}
-                  cursor={{fill: 'hsl(var(--muted))', opacity: 0.4}}
+                  contentStyle={{ backgroundColor: "var(--background)", borderColor: "var(--border)", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
+                  itemStyle={{ color: "var(--foreground)" }}
+                  cursor={{fill: 'var(--muted)', opacity: 0.4}}
                 />
                 <Bar dataKey="usage" radius={[0, 4, 4, 0]} barSize={32} />
               </BarChart>

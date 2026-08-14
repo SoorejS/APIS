@@ -55,17 +55,17 @@ export function RolloutMetrics() {
             {comparisonData.length > 0 ? (
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={comparisonData} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--border))" />
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--border)" />
                   <XAxis dataKey="metric" stroke="#888888" fontSize={12} tickLine={false} axisLine={false} />
                   <YAxis stroke="#888888" fontSize={12} tickLine={false} axisLine={false} />
                   <Tooltip 
-                    contentStyle={{ backgroundColor: "hsl(var(--background))", borderColor: "hsl(var(--border))", borderRadius: "8px" }}
-                    itemStyle={{ color: "hsl(var(--foreground))" }}
-                    cursor={{fill: 'hsl(var(--muted))'}}
+                    contentStyle={{ backgroundColor: "var(--background)", borderColor: "var(--border)", borderRadius: "8px" }}
+                    itemStyle={{ color: "var(--foreground)" }}
+                    cursor={{fill: 'var(--muted)'}}
                   />
                   <Legend iconType="circle" />
-                  <Bar dataKey="baseline" name="Baseline" fill="hsl(var(--muted-foreground))" radius={[4, 4, 0, 0]} />
-                  <Bar dataKey="candidate" name="Candidate" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="baseline" name="Baseline" fill="var(--muted-foreground)" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="candidate" name="Candidate" fill="var(--primary)" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             ) : (

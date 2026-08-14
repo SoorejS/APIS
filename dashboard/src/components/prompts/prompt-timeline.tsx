@@ -74,7 +74,7 @@ export function PromptTimeline() {
             
             <p className="text-sm text-muted-foreground mb-4">{v.rationale}</p>
             
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion className="w-full">
               <AccordionItem value="details" className="border-b-0">
                 <AccordionTrigger className="py-2 text-sm hover:no-underline font-medium text-primary">
                   View Details

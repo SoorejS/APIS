@@ -104,17 +104,17 @@ export default function ResultsPage() {
             <div className="h-[300px] w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={correctnessData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--muted-foreground))" strokeOpacity={0.2} />
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--muted-foreground)" strokeOpacity={0.2} />
                   <XAxis dataKey="step" stroke="#888888" fontSize={12} tickLine={false} axisLine={false} />
                   <YAxis stroke="#888888" fontSize={12} tickLine={false} axisLine={false} domain={[0, 1]} />
                   <Tooltip 
-                    contentStyle={{ backgroundColor: "hsl(var(--background))", borderColor: "hsl(var(--border))", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
-                    itemStyle={{ color: "hsl(var(--foreground))" }}
-                    cursor={{ stroke: "hsl(var(--muted-foreground))", strokeWidth: 1, strokeDasharray: "3 3" }}
+                    contentStyle={{ backgroundColor: "var(--background)", borderColor: "var(--border)", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
+                    itemStyle={{ color: "var(--foreground)" }}
+                    cursor={{ stroke: "var(--muted-foreground)", strokeWidth: 1, strokeDasharray: "3 3" }}
                   />
-                  <ReferenceLine x={750} stroke="hsl(var(--chart-4))" strokeDasharray="3 3" label={{ position: 'top', value: 'Drift Injected', fill: 'hsl(var(--chart-4))', fontSize: 10 }} />
-                  <Area type="monotone" dataKey="baseline" name="Baseline (Static)" stroke="hsl(var(--destructive))" strokeWidth={2} fillOpacity={0.1} fill="hsl(var(--destructive))" />
-                  <Area type="monotone" dataKey="adaptive" name="APIS (Adaptive)" stroke="hsl(var(--primary))" strokeWidth={3} fillOpacity={0.1} fill="hsl(var(--primary))" />
+                  <ReferenceLine x={750} stroke="var(--chart-4)" strokeDasharray="3 3" label={{ position: 'top', value: 'Drift Injected', fill: 'var(--chart-4)', fontSize: 10 }} />
+                  <Area type="monotone" dataKey="baseline" name="Baseline (Static)" stroke="var(--destructive)" strokeWidth={2} fillOpacity={0.1} fill="var(--destructive)" />
+                  <Area type="monotone" dataKey="adaptive" name="APIS (Adaptive)" stroke="var(--primary)" strokeWidth={3} fillOpacity={0.1} fill="var(--primary)" />
                   <Legend />
                 </AreaChart>
               </ResponsiveContainer>
@@ -131,16 +131,16 @@ export default function ResultsPage() {
             <div className="h-[300px] w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={errorData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--muted-foreground))" strokeOpacity={0.2} />
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--muted-foreground)" strokeOpacity={0.2} />
                   <XAxis dataKey="metric" stroke="#888888" fontSize={12} tickLine={false} axisLine={false} />
                   <YAxis stroke="#888888" fontSize={12} tickLine={false} axisLine={false} unit="%" />
                   <Tooltip 
-                    contentStyle={{ backgroundColor: "hsl(var(--background))", borderColor: "hsl(var(--border))", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
-                    itemStyle={{ color: "hsl(var(--foreground))" }}
-                    cursor={{fill: 'hsl(var(--muted))', opacity: 0.4}}
+                    contentStyle={{ backgroundColor: "var(--background)", borderColor: "var(--border)", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
+                    itemStyle={{ color: "var(--foreground)" }}
+                    cursor={{fill: 'var(--muted)', opacity: 0.4}}
                   />
-                  <Bar dataKey="baseline" name="Baseline (Static)" fill="hsl(var(--destructive))" radius={[4, 4, 0, 0]} />
-                  <Bar dataKey="adaptive" name="APIS (Adaptive)" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="baseline" name="Baseline (Static)" fill="var(--destructive)" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="adaptive" name="APIS (Adaptive)" fill="var(--primary)" radius={[4, 4, 0, 0]} />
                   <Legend />
                 </BarChart>
               </ResponsiveContainer>

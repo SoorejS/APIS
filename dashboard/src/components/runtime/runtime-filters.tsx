@@ -35,19 +35,19 @@ export function RuntimeFilters() {
 
   return (
     <div className="flex items-center space-x-2">
-      <Select value={currentNamespace} onValueChange={(val) => handleFilterChange("namespace_id", val)}>
+      <Select value={currentNamespace} onValueChange={(val) => handleFilterChange("namespace_id", val || "all")}>
         <SelectTrigger className="w-[180px]">
           <SelectValue placeholder="Namespace" />
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="all">All Namespaces</SelectItem>
           {!isLoading && namespaces?.map((ns: any) => (
-            <SelectItem key={ns.id} value={ns.id}>{ns.name}</SelectItem>
+            <SelectItem key={ns.id} value={String(ns.id)}>{ns.name}</SelectItem>
           ))}
         </SelectContent>
       </Select>
 
-      <Select value={currentProvider} onValueChange={(val) => handleFilterChange("provider", val)}>
+      <Select value={currentProvider} onValueChange={(val) => handleFilterChange("provider", val || "all")}>
         <SelectTrigger className="w-[180px]">
           <SelectValue placeholder="Provider" />
         </SelectTrigger>

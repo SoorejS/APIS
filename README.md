@@ -14,7 +14,9 @@ APIS is an enterprise-grade observability and runtime framework that automatical
 [Documentation](https://apis-docs.example.com) | [Discord](https://discord.gg/example) | [Demo](#quickstart)
 
 <br/>
-<img src="assets/dashboard-overview.png" alt="APIS Dashboard Overview" width="100%"/>
+
+[![APIS Demo Video Placeholder](assets/dashboard-overview.png)](https://www.youtube.com/watch?v=YOUR_YOUTUBE_LINK_HERE)
+*Click to watch the full 60-second system demonstration*
 </div>
 
 ---
