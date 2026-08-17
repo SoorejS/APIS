@@ -29,6 +29,7 @@ Thumbs.db
 
 # Database
 *.db
+!apis_demo.db
 
 # Docker
 docker-data/

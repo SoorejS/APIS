@@ -1,4 +1,6 @@
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/v1` : "http://localhost:8000/api/v1";
+const PRODUCTION_BACKEND = "https://apis-production-d069.up.railway.app";
+const backendUrl = process.env.NEXT_PUBLIC_API_URL || PRODUCTION_BACKEND;
+export const API_BASE_URL = `${backendUrl}/api/v1`;
 
 export async function fetchOverviewMetrics() {
   const res = await fetch(`${API_BASE_URL}/dashboard/overview`);
