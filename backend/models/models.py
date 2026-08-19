@@ -219,7 +219,7 @@ class AnalysisJob(Base):
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     namespace_id = Column(UUID(as_uuid=True), ForeignKey("prompt_namespaces.id"), nullable=False)
-    idempotency_hash = Column(String(128), unique=True, nullable=True)
+    idempotency_hash = Column(String(128), index=True, nullable=True)
     status = Column(String(50), nullable=False, default="queued")  # queued, running, completed, failed
     progress = Column(Float, default=0.0, nullable=False)
     eligible_interactions = Column(Integer, default=0, nullable=False)
