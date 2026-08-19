@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Sidebar } from "@/components/layout/sidebar";
-import { Header } from "@/components/layout/header";
 import { Providers } from "@/lib/query-provider";
+import { AuthProvider } from "@/components/auth-provider";
+import { AppShell } from "@/components/layout/app-shell";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,8 +20,6 @@ export const metadata: Metadata = {
   title: "APIS Dashboard",
   description: "Enterprise Observability Dashboard for APIS",
 };
-
-import { AuthProvider } from "@/components/auth-provider";
 
 export default function RootLayout({
   children,
@@ -43,13 +41,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              <Sidebar />
-              <div className="flex flex-1 flex-col overflow-hidden">
-                <Header />
-                <main className="flex-1 overflow-y-auto bg-muted/20">
-                  {children}
-                </main>
-              </div>
+              <AppShell>{children}</AppShell>
             </ThemeProvider>
           </Providers>
         </AuthProvider>
@@ -57,3 +49,4 @@ export default function RootLayout({
     </html>
   );
 }
+
