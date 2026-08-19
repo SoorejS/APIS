@@ -1,10 +1,21 @@
 "use client";
 
-import { Bell, Search, Settings } from "lucide-react";
+import { Bell, Search, Settings, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useSession, signOut } from "next-auth/react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export function Header() {
+  const { data: session } = useSession();
+
   return (
     <header className="flex h-16 shrink-0 items-center justify-between border-b bg-background/80 px-6 backdrop-blur-sm">
       <div className="flex items-center gap-4 flex-1">
@@ -26,10 +37,36 @@ export function Header() {
           <Settings className="h-5 w-5" />
         </Button>
         <div className="h-8 w-px bg-border mx-2" />
-        <Avatar className="h-8 w-8 cursor-pointer">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-          <AvatarFallback>AD</AvatarFallback>
-        </Avatar>
+        
+        {session?.user ? (
+          <DropdownMenu>
+            <DropdownMenuTrigger className="relative h-8 w-8 rounded-full outline-none focus-visible:ring-1 focus-visible:ring-ring">
+              <Avatar className="h-8 w-8 cursor-pointer">
+                <AvatarImage src={session.user.image || ""} alt={session.user.name || "User"} />
+                <AvatarFallback>{session.user.name?.charAt(0) || "U"}</AvatarFallback>
+              </Avatar>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56" align="end">
+              <DropdownMenuLabel className="font-normal">
+                <div className="flex flex-col space-y-1">
+                  <p className="text-sm font-medium leading-none">{session.user.name}</p>
+                  <p className="text-xs leading-none text-muted-foreground">
+                    {session.user.email}
+                  </p>
+                </div>
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem onClick={() => signOut()} className="cursor-pointer">
+                <LogOut className="mr-2 h-4 w-4" />
+                <span>Log out</span>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        ) : (
+          <Avatar className="h-8 w-8">
+            <AvatarFallback>U</AvatarFallback>
+          </Avatar>
+        )}
       </div>
     </header>
   );

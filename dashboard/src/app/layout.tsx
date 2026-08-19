@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   description: "Enterprise Observability Dashboard for APIS",
 };
 
+import { AuthProvider } from "@/components/auth-provider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,22 +35,24 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex h-full overflow-hidden bg-background">
-        <Providers>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Sidebar />
-            <div className="flex flex-1 flex-col overflow-hidden">
-              <Header />
-              <main className="flex-1 overflow-y-auto bg-muted/20">
-                {children}
-              </main>
-            </div>
-          </ThemeProvider>
-        </Providers>
+        <AuthProvider>
+          <Providers>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <Sidebar />
+              <div className="flex flex-1 flex-col overflow-hidden">
+                <Header />
+                <main className="flex-1 overflow-y-auto bg-muted/20">
+                  {children}
+                </main>
+              </div>
+            </ThemeProvider>
+          </Providers>
+        </AuthProvider>
       </body>
     </html>
   );
