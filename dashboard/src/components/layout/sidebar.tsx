@@ -16,10 +16,13 @@ const navigation = [
   { name: "Overview", href: "/", icon: LayoutDashboard },
   { name: "Runtime", href: "/runtime", icon: Activity },
   { name: "Prompts", href: "/prompts", icon: History },
+  { name: "Failure Patterns", href: "/failures", icon: AlertTriangle },
+  { name: "Living Evals", href: "/evals", icon: TerminalSquare },
   { name: "Canary", href: "/canary", icon: GitMerge },
   { name: "Drift", href: "/drift", icon: AlertTriangle },
-  { name: "Eval Proof", href: "/results", icon: Activity }, // Reusing Activity icon or similar
+  { name: "Eval Proof", href: "/results", icon: Activity },
 ];
+
 
 export function Sidebar() {
   const pathname = usePathname();

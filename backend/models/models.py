@@ -148,5 +148,87 @@ class DriftAlert(Base):
     namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])
 
 
+# ── V1.5 Failure Intelligence & Living Evaluation Models ──────────────────
+
+class FailurePattern(Base):
+    __tablename__ = "failure_patterns"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    namespace_id = Column(UUID(as_uuid=True), ForeignKey("prompt_namespaces.id"), nullable=False)
+    job_id = Column(UUID(as_uuid=True), ForeignKey("analysis_jobs.id"), nullable=True)
+    title = Column(String(255), nullable=False)
+    diagnosis = Column(Text, nullable=False)
+    category = Column(String(100), nullable=False)  # tool_selection, hallucination, syntax, retrieval, constraint_violation
+    severity = Column(String(50), nullable=False, default="medium")  # low, medium, high, critical
+    interaction_count = Column(Integer, nullable=False, default=0)
+    recurrence_rate = Column(Float, nullable=False, default=0.0)  # interactions_assigned / eligible_interactions
+    recurrence_trend = Column(Float, nullable=False, default=0.0)  # WoW velocity change
+    cluster_confidence = Column(Float, nullable=False, default=0.0)  # mean(hdbscan_membership_probabilities)
+    cluster_cohesion = Column(Float, nullable=False, default=0.0)  # mean(cosine_similarity_to_centroid)
+    diagnosis_confidence = Column(Float, nullable=False, default=0.0)  # LLM diagnosis confidence [0, 1]
+    exemplar_interaction_ids = Column(JSON, nullable=True)  # List of Interaction IDs
+    is_demo = Column(Boolean, default=False, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+    namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])
+    benchmark_cases = relationship("LivingBenchmarkCase", back_populates="pattern")
 
 
+class BenchmarkSuite(Base):
+    __tablename__ = "benchmark_suites"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    namespace_id = Column(UUID(as_uuid=True), ForeignKey("prompt_namespaces.id"), nullable=False)
+    version_number = Column(Integer, nullable=False, default=1)
+    case_count = Column(Integer, nullable=False, default=0)
+    idempotency_hash = Column(String(128), unique=True, nullable=True)
+    is_demo = Column(Boolean, default=False, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])
+    cases = relationship("LivingBenchmarkCase", back_populates="suite")
+
+
+class LivingBenchmarkCase(Base):
+    __tablename__ = "living_benchmark_cases"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    suite_id = Column(UUID(as_uuid=True), ForeignKey("benchmark_suites.id"), nullable=False)
+    pattern_id = Column(UUID(as_uuid=True), ForeignKey("failure_patterns.id"), nullable=True)
+    namespace_id = Column(UUID(as_uuid=True), ForeignKey("prompt_namespaces.id"), nullable=False)
+    archetype = Column(String(50), nullable=False)  # regression, edge_case, hard_negative
+    input_prompt = Column(Text, nullable=False)
+    expected_output_criteria = Column(Text, nullable=False)
+    negative_constraint = Column(Text, nullable=True)  # Specifically for hard_negative: what model must NOT do
+    assertion_type = Column(String(50), nullable=False, default="semantic_criteria")  # tool_call_match, semantic_criteria, json_schema, exact_match
+    source = Column(String(100), default="production_failure_cluster")
+    is_synthetic = Column(Boolean, default=True, nullable=False)
+    is_validated = Column(Boolean, default=False, nullable=False)
+    validation_confidence = Column(Float, nullable=False, default=0.0)
+    is_demo = Column(Boolean, default=False, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    suite = relationship("BenchmarkSuite", back_populates="cases")
+    pattern = relationship("FailurePattern", back_populates="benchmark_cases")
+    namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])
+
+
+class AnalysisJob(Base):
+    __tablename__ = "analysis_jobs"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    namespace_id = Column(UUID(as_uuid=True), ForeignKey("prompt_namespaces.id"), nullable=False)
+    idempotency_hash = Column(String(128), unique=True, nullable=True)
+    status = Column(String(50), nullable=False, default="queued")  # queued, running, completed, failed
+    progress = Column(Float, default=0.0, nullable=False)
+    eligible_interactions = Column(Integer, default=0, nullable=False)
+    embedded_count = Column(Integer, default=0, nullable=False)
+    noise_count = Column(Integer, default=0, nullable=False)
+    valid_clusters = Column(Integer, default=0, nullable=False)
+    tests_generated = Column(Integer, default=0, nullable=False)
+    error_message = Column(Text, nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    completed_at = Column(DateTime(timezone=True), nullable=True)
+
+    namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])

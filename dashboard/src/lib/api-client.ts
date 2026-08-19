@@ -95,3 +95,70 @@ export async function fetchDrift(params: {
   }
   return res.json();
 }
+
+// ── V1.5 Failure Intelligence & Living Evaluation APIs ────────────────────
+
+export async function fetchFailurePatterns(params?: { namespace_id?: string; demo?: boolean }) {
+  const query = new URLSearchParams();
+  if (params?.namespace_id) query.append("namespace_id", params.namespace_id);
+  if (params?.demo !== undefined) query.append("demo", String(params.demo));
+  else query.append("demo", "true");
+
+  const url = `${API_BASE_URL}/failures/patterns?${query.toString()}`;
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error("Failed to fetch failure patterns");
+  }
+  return res.json();
+}
+
+export async function fetchBenchmarkSuites(params?: { namespace_id?: string; demo?: boolean }) {
+  const query = new URLSearchParams();
+  if (params?.namespace_id) query.append("namespace_id", params.namespace_id);
+  if (params?.demo !== undefined) query.append("demo", String(params.demo));
+  else query.append("demo", "true");
+
+  const url = `${API_BASE_URL}/failures/benchmarks?${query.toString()}`;
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error("Failed to fetch benchmark suites");
+  }
+  return res.json();
+}
+
+export async function triggerFailureAnalysis(namespace_id: string) {
+  const res = await fetch(`${API_BASE_URL}/failures/analyze`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ namespace_id, window_days: 14, min_failures: 5, is_demo: false }),
+  });
+  if (!res.ok) {
+    throw new Error("Failed to trigger failure analysis");
+  }
+  return res.json();
+}
+
+export async function pollAnalysisJob(job_id: string) {
+  const res = await fetch(`${API_BASE_URL}/failures/jobs/${job_id}`);
+  if (!res.ok) {
+    throw new Error("Failed to poll analysis job");
+  }
+  return res.json();
+}
+
+export async function evaluatePromptOnBenchmark(payload: {
+  namespace_id: string;
+  prompt_version_id: string;
+  suite_id: string;
+}) {
+  const res = await fetch(`${API_BASE_URL}/failures/benchmarks/evaluate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) {
+    throw new Error("Failed to run benchmark evaluation");
+  }
+  return res.json();
+}
+
