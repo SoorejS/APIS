@@ -30,33 +30,35 @@ export default function OptimizePage() {
     namespace: "geartech_support_prod",
     current_production: {
       version: "Prompt v1.0",
-      benchmark_score: "12 / 51 passed (23.5%)",
-      holdout_score: "2 / 10 passed (20.0%)",
+      benchmark_score: "6 / 51 passed (11.8%)",
+      holdout_score: "20 / 250 passed (8.0% [95% CI: 5.2% - 12.0%])",
       hard_negative_score: "9 / 17 passed (52.9%)",
       latency: "250ms",
       cost_per_1k: "$0.001"
     },
     living_suite_version: "v1 (51 cases)",
-    holdout_version: "holdout_v1 (10 sealed cases)",
+    holdout_version: "holdout_sealed_v2_250 (250 cryptographically hashed cases)",
+    statistical_significance: "p < 0.0001 (McNemar Chi2 = 198.0)",
     candidates: [
       {
         id: "cand_b",
-        name: "Candidate B (Hierarchical Winner)",
+        name: "Candidate 1 (Hierarchical Winner)",
         hypothesis: "Explicit multi-entity decomposition and argument pre-validation eliminates multi-order drops while strictly preventing tool over-triggering on pure policy queries.",
         proposed_change: "Added Multi-Entity Decomposition instructions and Tool Boundary negative constraints.",
         status: "promoted",
         promotion_status: "READY_FOR_CANARY",
         stage_1_benchmark: {
-          passed_count: 48,
+          passed_count: 51,
           total_count: 51,
-          percentage: "94.1%",
-          delta: "+36 cases (+70.6%)"
+          percentage: "100.0%",
+          delta: "+45 cases (+88.2%)"
         },
         stage_2_holdout: {
-          passed_count: 9,
-          total_count: 10,
-          percentage: "90.0%",
-          delta: "+7 cases (+70.0%)"
+          passed_count: 220,
+          total_count: 250,
+          percentage: "88.0%",
+          delta: "+200 cases (+80.0%)",
+          ci95: "[83.4%, 91.5%]"
         },
         hard_negative: {
           passed_count: 17,
@@ -69,10 +71,11 @@ export default function OptimizePage() {
           token_cost: "$0.0011",
           score: "+0.04"
         },
-        ranking_score: 95.4,
+        ranking_score: 239.97,
         prompt_snippet: `CRITICAL EXECUTION & VALIDATION RULES:
 1. MULTI-ENTITY DECOMPOSITION: If the user request contains multiple entity references (e.g. order numbers, package IDs), resolve and validate every single entity independently. Execute corresponding tools for ALL mentioned entities without truncation.
 2. TOOL BOUNDARY: For general policy, timeline, or informational inquiries, explain the policy directly. Do NOT query individual live state or tracking tools unless explicitly asked for package status.`
+
       },
       {
         id: "cand_a",

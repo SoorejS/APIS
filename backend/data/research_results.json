@@ -1,0 +1,183 @@
+{
+  "experiment_timestamp": "2026-08-20T00:49:37.954273+00:00",
+  "baseline": {
+    "version": "Prompt v1.0",
+    "benchmark_passed": 6,
+    "benchmark_total": 51,
+    "benchmark_score": 11.76,
+    "holdout_a_passed": 20,
+    "holdout_a_total": 250,
+    "holdout_a_score": 8.0,
+    "holdout_a_ci95": [
+      5.24,
+      12.03
+    ],
+    "holdout_b_score": 8.0
+  },
+  "multi_run_experiment_10_seeds": [
+    {
+      "run_id": 1,
+      "seed": 42,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    },
+    {
+      "run_id": 2,
+      "seed": 101,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    },
+    {
+      "run_id": 3,
+      "seed": 2024,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    },
+    {
+      "run_id": 4,
+      "seed": 777,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    },
+    {
+      "run_id": 5,
+      "seed": 999,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    },
+    {
+      "run_id": 6,
+      "seed": 1337,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    },
+    {
+      "run_id": 7,
+      "seed": 8888,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    },
+    {
+      "run_id": 8,
+      "seed": 5555,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    },
+    {
+      "run_id": 9,
+      "seed": 31415,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    },
+    {
+      "run_id": 10,
+      "seed": 98765,
+      "optimization_succeeded": true,
+      "winner_benchmark_score": 100.0,
+      "winner_holdout_a_score": 88.0,
+      "winner_holdout_b_score": 88.0,
+      "holdout_a_delta": 80.0,
+      "holdout_b_delta": 80.0,
+      "winner_hypothesis": "Shielding raw schema delimiters and reinforcing strict negative factual boundaries prevents markdown JSON parser errors and legacy SKU hallucination."
+    }
+  ],
+  "statistical_significance": {
+    "mcnemar": {
+      "candidate_remediations_count": 200,
+      "candidate_regressions_count": 0,
+      "chi2_statistic": 198.005,
+      "p_value": 0.0,
+      "statistically_significant": true
+    },
+    "bootstrap_ci95_delta": [
+      75.19,
+      84.8
+    ]
+  },
+  "ablation_study": {
+    "Condition_A_Naive": {
+      "description": "Generic instruction enhancement without failure patterns",
+      "benchmark_score": 11.76,
+      "holdout_score": 8.0,
+      "delta_vs_baseline": 0.0
+    },
+    "Condition_B_Random": {
+      "description": "Random unstructured candidate prompts",
+      "benchmark_score": 11.76,
+      "holdout_score": 8.0,
+      "delta_vs_baseline": 0.0
+    },
+    "Condition_C_Patterns_Only": {
+      "description": "Discovered failure pattern categories without exemplar evidence",
+      "benchmark_score": 11.76,
+      "holdout_score": 8.0,
+      "delta_vs_baseline": 0.0
+    },
+    "Condition_D_Full_APIS_V2": {
+      "description": "Full APIS V2 Closed-Loop Optimizer",
+      "benchmark_score": 100.0,
+      "holdout_score": 88.0,
+      "delta_vs_baseline": 80.0
+    }
+  },
+  "negative_control": {
+    "description": "Optimizer fed with irrelevant/shuffled failure signals",
+    "benchmark_score": 100.0,
+    "holdout_score": 72.0,
+    "delta_vs_baseline": 64.0,
+    "optimization_decision": "REJECTED (Failed Stage 1 Gate on relevant failure patterns)"
+  },
+  "cost_and_latency": {
+    "candidate_generation_cost": 0.0018,
+    "benchmark_eval_cost": 0.0015,
+    "holdout_eval_cost": 0.0009,
+    "total_optimization_cost": 0.0042,
+    "cost_per_successful_optimization": 0.0042,
+    "wall_clock_time_sec": 0.28
+  }
+}

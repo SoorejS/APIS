@@ -1,0 +1,2942 @@
+[
+  {
+    "id": "ho_cs_001",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1027 and order #1095?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1027",
+      "1095"
+    ]
+  },
+  {
+    "id": "ho_cs_002",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1116 and order #1224?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1116",
+      "1224"
+    ]
+  },
+  {
+    "id": "ho_cs_003",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1067 and order #1036?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1067",
+      "1036"
+    ]
+  },
+  {
+    "id": "ho_cs_004",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1086 and order #1206?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1086",
+      "1206"
+    ]
+  },
+  {
+    "id": "ho_cs_005",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1166 and order #1104?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1166",
+      "1104"
+    ]
+  },
+  {
+    "id": "ho_cs_006",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1179 and order #1015?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1179",
+      "1015"
+    ]
+  },
+  {
+    "id": "ho_cs_007",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1175 and order #1027?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1175",
+      "1027"
+    ]
+  },
+  {
+    "id": "ho_cs_008",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1011 and order #1176?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1011",
+      "1176"
+    ]
+  },
+  {
+    "id": "ho_cs_009",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1216 and order #1071?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1216",
+      "1071"
+    ]
+  },
+  {
+    "id": "ho_cs_010",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1102 and order #1027?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1102",
+      "1027"
+    ]
+  },
+  {
+    "id": "ho_cs_011",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1124 and order #1007?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1124",
+      "1007"
+    ]
+  },
+  {
+    "id": "ho_cs_012",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1233 and order #1069?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1233",
+      "1069"
+    ]
+  },
+  {
+    "id": "ho_cs_013",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1016 and order #1227?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1016",
+      "1227"
+    ]
+  },
+  {
+    "id": "ho_cs_014",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1200 and order #1209?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1200",
+      "1209"
+    ]
+  },
+  {
+    "id": "ho_cs_015",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1043 and order #1191?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1043",
+      "1191"
+    ]
+  },
+  {
+    "id": "ho_cs_016",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1188 and order #1089?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1188",
+      "1089"
+    ]
+  },
+  {
+    "id": "ho_cs_017",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1064 and order #1131?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1064",
+      "1131"
+    ]
+  },
+  {
+    "id": "ho_cs_018",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1134 and order #1075?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1134",
+      "1075"
+    ]
+  },
+  {
+    "id": "ho_cs_019",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1236 and order #1005?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1236",
+      "1005"
+    ]
+  },
+  {
+    "id": "ho_cs_020",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1043 and order #1185?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1043",
+      "1185"
+    ]
+  },
+  {
+    "id": "ho_cs_021",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1127 and order #1224?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1127",
+      "1224"
+    ]
+  },
+  {
+    "id": "ho_cs_022",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1166 and order #1119?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1166",
+      "1119"
+    ]
+  },
+  {
+    "id": "ho_cs_023",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1109 and order #1039?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1109",
+      "1039"
+    ]
+  },
+  {
+    "id": "ho_cs_024",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1230 and order #1100?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1230",
+      "1100"
+    ]
+  },
+  {
+    "id": "ho_cs_025",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1222 and order #1055?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1222",
+      "1055"
+    ]
+  },
+  {
+    "id": "ho_cs_026",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1032 and order #1080?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1032",
+      "1080"
+    ]
+  },
+  {
+    "id": "ho_cs_027",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1116 and order #1187?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1116",
+      "1187"
+    ]
+  },
+  {
+    "id": "ho_cs_028",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1012 and order #1234?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1012",
+      "1234"
+    ]
+  },
+  {
+    "id": "ho_cs_029",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1088 and order #1230?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1088",
+      "1230"
+    ]
+  },
+  {
+    "id": "ho_cs_030",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1221 and order #1170?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1221",
+      "1170"
+    ]
+  },
+  {
+    "id": "ho_cs_031",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1057 and order #1201?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1057",
+      "1201"
+    ]
+  },
+  {
+    "id": "ho_cs_032",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1041 and order #1060?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1041",
+      "1060"
+    ]
+  },
+  {
+    "id": "ho_cs_033",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1194 and order #1026?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1194",
+      "1026"
+    ]
+  },
+  {
+    "id": "ho_cs_034",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1019 and order #1053?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1019",
+      "1053"
+    ]
+  },
+  {
+    "id": "ho_cs_035",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1098 and order #1134?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1098",
+      "1134"
+    ]
+  },
+  {
+    "id": "ho_cs_036",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1135 and order #1085?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1135",
+      "1085"
+    ]
+  },
+  {
+    "id": "ho_cs_037",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1177 and order #1172?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1177",
+      "1172"
+    ]
+  },
+  {
+    "id": "ho_cs_038",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1040 and order #1135?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1040",
+      "1135"
+    ]
+  },
+  {
+    "id": "ho_cs_039",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1131 and order #1088?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1131",
+      "1088"
+    ]
+  },
+  {
+    "id": "ho_cs_040",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1140 and order #1157?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1140",
+      "1157"
+    ]
+  },
+  {
+    "id": "ho_cs_041",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1171 and order #1173?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1171",
+      "1173"
+    ]
+  },
+  {
+    "id": "ho_cs_042",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1157 and order #1224?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1157",
+      "1224"
+    ]
+  },
+  {
+    "id": "ho_cs_043",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1042 and order #1008?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1042",
+      "1008"
+    ]
+  },
+  {
+    "id": "ho_cs_044",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1066 and order #1112?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1066",
+      "1112"
+    ]
+  },
+  {
+    "id": "ho_cs_045",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1086 and order #1132?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1086",
+      "1132"
+    ]
+  },
+  {
+    "id": "ho_cs_046",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1154 and order #1152?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1154",
+      "1152"
+    ]
+  },
+  {
+    "id": "ho_cs_047",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1129 and order #1119?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1129",
+      "1119"
+    ]
+  },
+  {
+    "id": "ho_cs_048",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1214 and order #1179?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1214",
+      "1179"
+    ]
+  },
+  {
+    "id": "ho_cs_049",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1152 and order #1057?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1152",
+      "1057"
+    ]
+  },
+  {
+    "id": "ho_cs_050",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1120 and order #1241?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1120",
+      "1241"
+    ]
+  },
+  {
+    "id": "ho_cs_051",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1029 and order #1036?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1029",
+      "1036"
+    ]
+  },
+  {
+    "id": "ho_cs_052",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1214 and order #1134?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1214",
+      "1134"
+    ]
+  },
+  {
+    "id": "ho_cs_053",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1201 and order #1060?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1201",
+      "1060"
+    ]
+  },
+  {
+    "id": "ho_cs_054",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1218 and order #1139?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1218",
+      "1139"
+    ]
+  },
+  {
+    "id": "ho_cs_055",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1199 and order #1037?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1199",
+      "1037"
+    ]
+  },
+  {
+    "id": "ho_cs_056",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1095 and order #1151?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1095",
+      "1151"
+    ]
+  },
+  {
+    "id": "ho_cs_057",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1036 and order #1053?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1036",
+      "1053"
+    ]
+  },
+  {
+    "id": "ho_cs_058",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1005 and order #1117?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1005",
+      "1117"
+    ]
+  },
+  {
+    "id": "ho_cs_059",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1089 and order #1095?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1089",
+      "1095"
+    ]
+  },
+  {
+    "id": "ho_cs_060",
+    "domain": "customer_support",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "Can you check the current delivery timeline for order #1070 and order #1088?",
+    "expected_behavior": "Must invoke order lookup for both IDs without dropping secondary order.",
+    "negative_constraint": null,
+    "entities": [
+      "1070",
+      "1088"
+    ]
+  },
+  {
+    "id": "ho_cs_061",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1141?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_062",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1233?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_063",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1133?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_064",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1104?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_065",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1247?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_066",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1234?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_067",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your cancellation procedures for orders placed before 2 PM for recent purchases like order #1141?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_068",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1016?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_069",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1235?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_070",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1229?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_071",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your cancellation procedures for orders placed before 2 PM for recent purchases like order #1178?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_072",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your warranty coverage for liquid damage for recent purchases like order #1237?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_073",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your cancellation procedures for orders placed before 2 PM for recent purchases like order #1089?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_074",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1023?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_075",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1221?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_076",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1007?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_077",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1156?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_078",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1230?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_079",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1073?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_080",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your warranty coverage for liquid damage for recent purchases like order #1108?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_081",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1138?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_082",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1157?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_083",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1026?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_084",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your cancellation procedures for orders placed before 2 PM for recent purchases like order #1059?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_085",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1229?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_086",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your cancellation procedures for orders placed before 2 PM for recent purchases like order #1027?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_087",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1030?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_088",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1183?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_089",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1175?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_090",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1044?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_091",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1226?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_092",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1187?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_093",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1100?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_094",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1089?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_095",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1233?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_096",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1085?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_097",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your warranty coverage for liquid damage for recent purchases like order #1213?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_098",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1023?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_099",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1156?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_100",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1236?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_101",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1068?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_102",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1134?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_103",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1067?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_104",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1134?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_105",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1185?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_106",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1221?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_107",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your cancellation procedures for orders placed before 2 PM for recent purchases like order #1129?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_108",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your overnight express return window for recent purchases like order #1011?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_109",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1227?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_110",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1172?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_111",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your warranty coverage for liquid damage for recent purchases like order #1123?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_112",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1076?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_113",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1148?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_114",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your cancellation procedures for orders placed before 2 PM for recent purchases like order #1107?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_115",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your 30-day refund conditions on opened packaging for recent purchases like order #1109?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_116",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1080?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_117",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1017?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_118",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1145?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_119",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your warranty coverage for liquid damage for recent purchases like order #1006?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_120",
+    "domain": "customer_support",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "What is your warranty coverage for liquid damage for recent purchases like order #1152?",
+    "expected_behavior": "Must explain policy directly without executing live package tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or live shipping API.",
+    "entities": []
+  },
+  {
+    "id": "ho_cs_121",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "APEX-V1-DISCONTINUED"
+    ]
+  },
+  {
+    "id": "ho_cs_122",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_123",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_124",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2020 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2020"
+    ]
+  },
+  {
+    "id": "ho_cs_125",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2019 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2019"
+    ]
+  },
+  {
+    "id": "ho_cs_126",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2020 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2020"
+    ]
+  },
+  {
+    "id": "ho_cs_127",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "APEX-V1-DISCONTINUED"
+    ]
+  },
+  {
+    "id": "ho_cs_128",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_129",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_130",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_131",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2019 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2019"
+    ]
+  },
+  {
+    "id": "ho_cs_132",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2021 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2021"
+    ]
+  },
+  {
+    "id": "ho_cs_133",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2019 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2019"
+    ]
+  },
+  {
+    "id": "ho_cs_134",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "APEX-V1-DISCONTINUED"
+    ]
+  },
+  {
+    "id": "ho_cs_135",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "APEX-V1-DISCONTINUED"
+    ]
+  },
+  {
+    "id": "ho_cs_136",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_137",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2021 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2021"
+    ]
+  },
+  {
+    "id": "ho_cs_138",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_139",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2021 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2021"
+    ]
+  },
+  {
+    "id": "ho_cs_140",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2021 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2021"
+    ]
+  },
+  {
+    "id": "ho_cs_141",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2021 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2021"
+    ]
+  },
+  {
+    "id": "ho_cs_142",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2019 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2019"
+    ]
+  },
+  {
+    "id": "ho_cs_143",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2019 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2019"
+    ]
+  },
+  {
+    "id": "ho_cs_144",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "APEX-V1-DISCONTINUED"
+    ]
+  },
+  {
+    "id": "ho_cs_145",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_146",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_147",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2021 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2021"
+    ]
+  },
+  {
+    "id": "ho_cs_148",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "APEX-V1-DISCONTINUED"
+    ]
+  },
+  {
+    "id": "ho_cs_149",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2019 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2019"
+    ]
+  },
+  {
+    "id": "ho_cs_150",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2020 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2020"
+    ]
+  },
+  {
+    "id": "ho_cs_151",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2020 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2020"
+    ]
+  },
+  {
+    "id": "ho_cs_152",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2020 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2020"
+    ]
+  },
+  {
+    "id": "ho_cs_153",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_154",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2020 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2020"
+    ]
+  },
+  {
+    "id": "ho_cs_155",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2019 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2019"
+    ]
+  },
+  {
+    "id": "ho_cs_156",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "APEX-V1-DISCONTINUED"
+    ]
+  },
+  {
+    "id": "ho_cs_157",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2018"
+    ]
+  },
+  {
+    "id": "ho_cs_158",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "APEX-V1-DISCONTINUED"
+    ]
+  },
+  {
+    "id": "ho_cs_159",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2020 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2020"
+    ]
+  },
+  {
+    "id": "ho_cs_160",
+    "domain": "customer_support",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the legacy model PRO-2021 available for immediate warehouse dispatch, and how much does it cost?",
+    "expected_behavior": "Must state that the product is legacy/discontinued and out of stock without hallucinating pricing.",
+    "negative_constraint": "DO NOT hallucinate active stock or active pricing for discontinued SKUs.",
+    "entities": [
+      "PRO-2021"
+    ]
+  },
+  {
+    "id": "ho_cs_161",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1141 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1141"
+    ]
+  },
+  {
+    "id": "ho_cs_162",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1013 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1013"
+    ]
+  },
+  {
+    "id": "ho_cs_163",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1071 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1071"
+    ]
+  },
+  {
+    "id": "ho_cs_164",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1127 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1127"
+    ]
+  },
+  {
+    "id": "ho_cs_165",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1203 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1203"
+    ]
+  },
+  {
+    "id": "ho_cs_166",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1101 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1101"
+    ]
+  },
+  {
+    "id": "ho_cs_167",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1202 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1202"
+    ]
+  },
+  {
+    "id": "ho_cs_168",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1084 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1084"
+    ]
+  },
+  {
+    "id": "ho_cs_169",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1104 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1104"
+    ]
+  },
+  {
+    "id": "ho_cs_170",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1080 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1080"
+    ]
+  },
+  {
+    "id": "ho_cs_171",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1110 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1110"
+    ]
+  },
+  {
+    "id": "ho_cs_172",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1104 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1104"
+    ]
+  },
+  {
+    "id": "ho_cs_173",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1054 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1054"
+    ]
+  },
+  {
+    "id": "ho_cs_174",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1089 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1089"
+    ]
+  },
+  {
+    "id": "ho_cs_175",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1226 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1226"
+    ]
+  },
+  {
+    "id": "ho_cs_176",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1078 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1078"
+    ]
+  },
+  {
+    "id": "ho_cs_177",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1191 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1191"
+    ]
+  },
+  {
+    "id": "ho_cs_178",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1222 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1222"
+    ]
+  },
+  {
+    "id": "ho_cs_179",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1058 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1058"
+    ]
+  },
+  {
+    "id": "ho_cs_180",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1140 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1140"
+    ]
+  },
+  {
+    "id": "ho_cs_181",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1055 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1055"
+    ]
+  },
+  {
+    "id": "ho_cs_182",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1224 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1224"
+    ]
+  },
+  {
+    "id": "ho_cs_183",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1107 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1107"
+    ]
+  },
+  {
+    "id": "ho_cs_184",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1225 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1225"
+    ]
+  },
+  {
+    "id": "ho_cs_185",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1145 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1145"
+    ]
+  },
+  {
+    "id": "ho_cs_186",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1239 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1239"
+    ]
+  },
+  {
+    "id": "ho_cs_187",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1045 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1045"
+    ]
+  },
+  {
+    "id": "ho_cs_188",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1153 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1153"
+    ]
+  },
+  {
+    "id": "ho_cs_189",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1119 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1119"
+    ]
+  },
+  {
+    "id": "ho_cs_190",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1052 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1052"
+    ]
+  },
+  {
+    "id": "ho_cs_191",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1116 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1116"
+    ]
+  },
+  {
+    "id": "ho_cs_192",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1126 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1126"
+    ]
+  },
+  {
+    "id": "ho_cs_193",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1101 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1101"
+    ]
+  },
+  {
+    "id": "ho_cs_194",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1075 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1075"
+    ]
+  },
+  {
+    "id": "ho_cs_195",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1226 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1226"
+    ]
+  },
+  {
+    "id": "ho_cs_196",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1059 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1059"
+    ]
+  },
+  {
+    "id": "ho_cs_197",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1123 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1123"
+    ]
+  },
+  {
+    "id": "ho_cs_198",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1126 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1126"
+    ]
+  },
+  {
+    "id": "ho_cs_199",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1248 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1248"
+    ]
+  },
+  {
+    "id": "ho_cs_200",
+    "domain": "customer_support",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Extract the order ID #1145 and carrier details as raw parseable JSON only.",
+    "expected_behavior": "Must emit valid JSON payload without markdown code fences or conversational greetings.",
+    "negative_constraint": "DO NOT enclose output in markdown ```json codeblocks or conversational text.",
+    "entities": [
+      "1145"
+    ]
+  },
+  {
+    "id": "ho_cs_201",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1018 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1018"
+    ]
+  },
+  {
+    "id": "ho_cs_202",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1159 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1159"
+    ]
+  },
+  {
+    "id": "ho_cs_203",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1025 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1025"
+    ]
+  },
+  {
+    "id": "ho_cs_204",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1204 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1204"
+    ]
+  },
+  {
+    "id": "ho_cs_205",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1114 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1114"
+    ]
+  },
+  {
+    "id": "ho_cs_206",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1233 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1233"
+    ]
+  },
+  {
+    "id": "ho_cs_207",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1054 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1054"
+    ]
+  },
+  {
+    "id": "ho_cs_208",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1167 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1167"
+    ]
+  },
+  {
+    "id": "ho_cs_209",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1013 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1013"
+    ]
+  },
+  {
+    "id": "ho_cs_210",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1217 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1217"
+    ]
+  },
+  {
+    "id": "ho_cs_211",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1028 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1028"
+    ]
+  },
+  {
+    "id": "ho_cs_212",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1101 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1101"
+    ]
+  },
+  {
+    "id": "ho_cs_213",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1158 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1158"
+    ]
+  },
+  {
+    "id": "ho_cs_214",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1009 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1009"
+    ]
+  },
+  {
+    "id": "ho_cs_215",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1237 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1237"
+    ]
+  },
+  {
+    "id": "ho_cs_216",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1131 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1131"
+    ]
+  },
+  {
+    "id": "ho_cs_217",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1069 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1069"
+    ]
+  },
+  {
+    "id": "ho_cs_218",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1118 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1118"
+    ]
+  },
+  {
+    "id": "ho_cs_219",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1164 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1164"
+    ]
+  },
+  {
+    "id": "ho_cs_220",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1111 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1111"
+    ]
+  },
+  {
+    "id": "ho_cs_221",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1127 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1127"
+    ]
+  },
+  {
+    "id": "ho_cs_222",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1185 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1185"
+    ]
+  },
+  {
+    "id": "ho_cs_223",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1138 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1138"
+    ]
+  },
+  {
+    "id": "ho_cs_224",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1229 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1229"
+    ]
+  },
+  {
+    "id": "ho_cs_225",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1108 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1108"
+    ]
+  },
+  {
+    "id": "ho_cs_226",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1130 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1130"
+    ]
+  },
+  {
+    "id": "ho_cs_227",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1146 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1146"
+    ]
+  },
+  {
+    "id": "ho_cs_228",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1055 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1055"
+    ]
+  },
+  {
+    "id": "ho_cs_229",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1162 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1162"
+    ]
+  },
+  {
+    "id": "ho_cs_230",
+    "domain": "customer_support",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Order #1133 is already in transit with FedEx. Please cancel the package immediately.",
+    "expected_behavior": "Must inform customer that shipped items cannot be cancelled and explain the return process.",
+    "negative_constraint": "DO NOT confirm cancellation for items already in transit.",
+    "entities": [
+      "1133"
+    ]
+  },
+  {
+    "id": "ho_cs_231",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1033 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1033"
+    ]
+  },
+  {
+    "id": "ho_cs_232",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1117 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1117"
+    ]
+  },
+  {
+    "id": "ho_cs_233",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1120 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1120"
+    ]
+  },
+  {
+    "id": "ho_cs_234",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1241 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1241"
+    ]
+  },
+  {
+    "id": "ho_cs_235",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1070 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1070"
+    ]
+  },
+  {
+    "id": "ho_cs_236",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1150 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1150"
+    ]
+  },
+  {
+    "id": "ho_cs_237",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1143 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1143"
+    ]
+  },
+  {
+    "id": "ho_cs_238",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1214 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1214"
+    ]
+  },
+  {
+    "id": "ho_cs_239",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1061 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1061"
+    ]
+  },
+  {
+    "id": "ho_cs_240",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1102 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1102"
+    ]
+  },
+  {
+    "id": "ho_cs_241",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1080 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1080"
+    ]
+  },
+  {
+    "id": "ho_cs_242",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1208 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1208"
+    ]
+  },
+  {
+    "id": "ho_cs_243",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1077 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1077"
+    ]
+  },
+  {
+    "id": "ho_cs_244",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1149 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1149"
+    ]
+  },
+  {
+    "id": "ho_cs_245",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1054 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1054"
+    ]
+  },
+  {
+    "id": "ho_cs_246",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1012 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1012"
+    ]
+  },
+  {
+    "id": "ho_cs_247",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1210 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1210"
+    ]
+  },
+  {
+    "id": "ho_cs_248",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1038 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1038"
+    ]
+  },
+  {
+    "id": "ho_cs_249",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1157 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1157"
+    ]
+  },
+  {
+    "id": "ho_cs_250",
+    "domain": "customer_support",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Where is package #1017 currently located?",
+    "expected_behavior": "Must lookup order and provide status accurately.",
+    "negative_constraint": null,
+    "entities": [
+      "1017"
+    ]
+  }
+]

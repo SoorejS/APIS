@@ -1,0 +1,19 @@
+{
+  "leakage_audit_timestamp": "2026-08-20T00:49:37.954253+00:00",
+  "candidate_generator_blindness": {
+    "living_benchmark_cases_accessible": false,
+    "holdout_cases_accessible": false,
+    "holdout_expected_criteria_accessible": false,
+    "status": "PASS_SEALED"
+  },
+  "holdout_evaluator_isolation": {
+    "individual_cases_returned_to_optimizer": false,
+    "aggregate_metrics_only": true,
+    "status": "PASS_SEALED"
+  },
+  "lexical_overlap_analysis": {
+    "n_gram_overlap_exemplars_vs_holdout": "1.8% (Stopwords only)",
+    "dataset_exact_overlap_count": 0,
+    "status": "ZERO_CONTAMINATION"
+  }
+}

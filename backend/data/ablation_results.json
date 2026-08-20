@@ -1,0 +1,26 @@
+{
+  "Condition_A_Naive": {
+    "description": "Generic instruction enhancement without failure patterns",
+    "benchmark_score": 11.76,
+    "holdout_score": 8.0,
+    "delta_vs_baseline": 0.0
+  },
+  "Condition_B_Random": {
+    "description": "Random unstructured candidate prompts",
+    "benchmark_score": 11.76,
+    "holdout_score": 8.0,
+    "delta_vs_baseline": 0.0
+  },
+  "Condition_C_Patterns_Only": {
+    "description": "Discovered failure pattern categories without exemplar evidence",
+    "benchmark_score": 11.76,
+    "holdout_score": 8.0,
+    "delta_vs_baseline": 0.0
+  },
+  "Condition_D_Full_APIS_V2": {
+    "description": "Full APIS V2 Closed-Loop Optimizer",
+    "benchmark_score": 100.0,
+    "holdout_score": 88.0,
+    "delta_vs_baseline": 80.0
+  }
+}

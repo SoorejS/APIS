@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "ho_b_001",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2000 and ORD-2001. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_002",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2002 and ORD-2003. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_003",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2004 and ORD-2005. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_004",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2006 and ORD-2007. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_005",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2008 and ORD-2009. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_006",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2010 and ORD-2011. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_007",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2012 and ORD-2013. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_008",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2014 and ORD-2015. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_009",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2016 and ORD-2017. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_010",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2018 and ORD-2019. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_011",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2020 and ORD-2021. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_012",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2022 and ORD-2023. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_013",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2024 and ORD-2025. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_014",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2026 and ORD-2027. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_015",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2028 and ORD-2029. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_016",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2030 and ORD-2031. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_017",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2032 and ORD-2033. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_018",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2034 and ORD-2035. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_019",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2036 and ORD-2037. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_020",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2038 and ORD-2039. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_021",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2040 and ORD-2041. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_022",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2042 and ORD-2043. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_023",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2044 and ORD-2045. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_024",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2046 and ORD-2047. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_025",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2048 and ORD-2049. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_026",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2050 and ORD-2051. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_027",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2052 and ORD-2053. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_028",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2054 and ORD-2055. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_029",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2056 and ORD-2057. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_030",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2058 and ORD-2059. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_031",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2060 and ORD-2061. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_032",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2062 and ORD-2063. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_033",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2064 and ORD-2065. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_034",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2066 and ORD-2067. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_035",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2068 and ORD-2069. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_036",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2070 and ORD-2071. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_037",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2072 and ORD-2073. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_038",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2074 and ORD-2075. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_039",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2076 and ORD-2077. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_040",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2078 and ORD-2079. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_041",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2080 and ORD-2081. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_042",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2082 and ORD-2083. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_043",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2084 and ORD-2085. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_044",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2086 and ORD-2087. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_045",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2088 and ORD-2089. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_046",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2090 and ORD-2091. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_047",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2092 and ORD-2093. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_048",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2094 and ORD-2095. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_049",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2096 and ORD-2097. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_050",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2098 and ORD-2099. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_051",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2100 and ORD-2101. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_052",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2102 and ORD-2103. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_053",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2104 and ORD-2105. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_054",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2106 and ORD-2107. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_055",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2108 and ORD-2109. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_056",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2110 and ORD-2111. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_057",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2112 and ORD-2113. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_058",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2114 and ORD-2115. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_059",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2116 and ORD-2117. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_060",
+    "category": "multi_entity",
+    "archetype": "regression",
+    "query": "I placed two shipments ORD-2118 and ORD-2119. What are their transit statuses?",
+    "expected_behavior": "Must lookup both shipments.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_061",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2000?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_062",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2001?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_063",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2002?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_064",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2003?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_065",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2004?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_066",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2005?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_067",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2006?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_068",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2007?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_069",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2008?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_070",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2009?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_071",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2010?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_072",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2011?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_073",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2012?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_074",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2013?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_075",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2014?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_076",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2015?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_077",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2016?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_078",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2017?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_079",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2018?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_080",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2019?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_081",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2020?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_082",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2021?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_083",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2022?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_084",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2023?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_085",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2024?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_086",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2025?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_087",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2026?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_088",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2027?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_089",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2028?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_090",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2029?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_091",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2030?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_092",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2031?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_093",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2032?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_094",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2033?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_095",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2034?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_096",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2035?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_097",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2036?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_098",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2037?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_099",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2038?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_100",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2039?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_101",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2040?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_102",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2041?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_103",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2042?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_104",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2043?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_105",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2044?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_106",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2045?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_107",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2046?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_108",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2047?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_109",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2048?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_110",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2049?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_111",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2050?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_112",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2051?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_113",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2052?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_114",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2053?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_115",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2054?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_116",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2055?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_117",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2056?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_118",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2057?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_119",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2058?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_120",
+    "category": "policy_boundary",
+    "archetype": "hard_negative",
+    "query": "Do you offer free replacements for damaged goods under our commercial contract for order ORD-2059?",
+    "expected_behavior": "Explain warranty policy directly without calling tracking tool.",
+    "negative_constraint": "DO NOT invoke tool_lookup_order or query shipment API."
+  },
+  {
+    "id": "ho_b_121",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_122",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_123",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_124",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_125",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_126",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_127",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_128",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_129",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_130",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_131",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_132",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_133",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_134",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_135",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_136",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_137",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_138",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_139",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_140",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_141",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_142",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_143",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_144",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_145",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_146",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_147",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_148",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_149",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_150",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_151",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_152",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_153",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_154",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_155",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_156",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_157",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_158",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_159",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_160",
+    "category": "discontinued_sku",
+    "archetype": "edge_case",
+    "query": "Is the discontinued Apex 2017 headset available in bulk?",
+    "expected_behavior": "State out of stock and discontinued.",
+    "negative_constraint": "DO NOT fabricate inventory stock."
+  },
+  {
+    "id": "ho_b_161",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2000 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_162",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2001 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_163",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2002 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_164",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2003 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_165",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2004 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_166",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2005 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_167",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2006 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_168",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2007 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_169",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2008 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_170",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2009 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_171",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2010 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_172",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2011 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_173",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2012 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_174",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2013 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_175",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2014 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_176",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2015 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_177",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2016 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_178",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2017 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_179",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2018 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_180",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2019 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_181",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2020 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_182",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2021 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_183",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2022 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_184",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2023 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_185",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2024 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_186",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2025 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_187",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2026 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_188",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2027 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_189",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2028 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_190",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2029 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_191",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2030 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_192",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2031 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_193",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2032 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_194",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2033 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_195",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2034 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_196",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2035 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_197",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2036 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_198",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2037 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_199",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2038 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_200",
+    "category": "json_extraction",
+    "archetype": "regression",
+    "query": "Convert shipping record ORD-2039 into strict JSON object without code blocks.",
+    "expected_behavior": "Raw parseable JSON only.",
+    "negative_constraint": "DO NOT use markdown code fences."
+  },
+  {
+    "id": "ho_b_201",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2000 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_202",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2001 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_203",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2002 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_204",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2003 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_205",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2004 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_206",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2005 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_207",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2006 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_208",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2007 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_209",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2008 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_210",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2009 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_211",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2010 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_212",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2011 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_213",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2012 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_214",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2013 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_215",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2014 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_216",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2015 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_217",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2016 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_218",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2017 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_219",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2018 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_220",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2019 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_221",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2020 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_222",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2021 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_223",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2022 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_224",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2023 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_225",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2024 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_226",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2025 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_227",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2026 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_228",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2027 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_229",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2028 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_230",
+    "category": "invalid_cancellation",
+    "archetype": "edge_case",
+    "query": "Cancel shipment ORD-2029 which was delivered 3 hours ago.",
+    "expected_behavior": "Delivered items must be returned, not cancelled.",
+    "negative_constraint": "DO NOT confirm cancellation for delivered orders."
+  },
+  {
+    "id": "ho_b_231",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2000.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_232",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2001.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_233",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2002.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_234",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2003.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_235",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2004.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_236",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2005.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_237",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2006.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_238",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2007.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_239",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2008.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_240",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2009.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_241",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2010.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_242",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2011.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_243",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2012.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_244",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2013.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_245",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2014.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_246",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2015.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_247",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2016.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_248",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2017.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_249",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2018.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  },
+  {
+    "id": "ho_b_250",
+    "category": "standard_query",
+    "archetype": "standard",
+    "query": "Track order ORD-2019.",
+    "expected_behavior": "Lookup order status.",
+    "negative_constraint": null
+  }
+]

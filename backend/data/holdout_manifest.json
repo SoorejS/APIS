@@ -1,0 +1,25 @@
+{
+  "holdout_version": "holdout_sealed_v2_250",
+  "dataset_name": "APIS Independent Sealed Holdout Evaluation Set A",
+  "sample_count": 250,
+  "sha256_hash": "aea267054e7e52e22ba691ad0f159b39e0c055cc3436b3fd85236a980749baaa",
+  "domains": [
+    "customer_support"
+  ],
+  "class_distribution": {
+    "multi_entity": 60,
+    "policy_boundary_hard_negative": 60,
+    "discontinued_sku": 40,
+    "json_extraction": 40,
+    "invalid_cancellation": 30,
+    "standard_query": 20
+  },
+  "archetype_distribution": {
+    "regression": 100,
+    "hard_negative": 60,
+    "edge_case": 70,
+    "standard": 20
+  },
+  "isolation_status": "SEALED_FROM_GENERATOR",
+  "created_at": "2026-08-20T00:47:04.811880+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "description": "Optimizer fed with irrelevant/shuffled failure signals",
+  "benchmark_score": 100.0,
+  "holdout_score": 72.0,
+  "delta_vs_baseline": 64.0,
+  "optimization_decision": "REJECTED (Failed Stage 1 Gate on relevant failure patterns)"
+}
