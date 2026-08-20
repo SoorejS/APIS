@@ -1,0 +1,44 @@
+{
+  "baseline_holdout_a": {
+    "n": 250,
+    "passed": 89,
+    "pass_rate": 35.6,
+    "wilson_95_ci": [
+      29.92,
+      41.71
+    ],
+    "reported_ci": [
+      29.92,
+      41.71
+    ],
+    "match": true
+  },
+  "winner_holdout_a": {
+    "n": 250,
+    "passed": 134,
+    "pass_rate": 53.6,
+    "wilson_95_ci": [
+      47.41,
+      59.68
+    ],
+    "reported_ci": [
+      47.41,
+      59.68
+    ],
+    "match": true
+  },
+  "paired_bootstrap_delta_ci": {
+    "n_bootstraps": 1000,
+    "seed": 42,
+    "reported_bootstrap_ci95": [
+      12.4,
+      23.6
+    ],
+    "recomputed_bootstrap_ci95": [
+      12.4,
+      23.6
+    ],
+    "method": "paired_percentile_bootstrap",
+    "interpretation": "Candidate improvement on Holdout A is bounded between +12.4% and +23.6% at 95% confidence."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "contingency_table_2x2": {
+    "cell_a_both_pass": 81,
+    "cell_b_baseline_pass_candidate_fail": 8,
+    "cell_c_baseline_fail_candidate_pass": 53,
+    "cell_d_both_fail": 108,
+    "total_paired_observations": 250
+  },
+  "marginal_totals": {
+    "baseline_passed": 89,
+    "candidate_passed": 134,
+    "baseline_failed": 161,
+    "candidate_failed": 116
+  },
+  "recomputed_statistics": {
+    "chi2_continuity_corrected": 31.738,
+    "p_value_asymptotic": 1.7646e-08,
+    "p_value_exact_binomial": 2.9864e-09,
+    "reported_chi2": 31.738,
+    "reported_p_value": 1.7646e-08,
+    "match": true
+  },
+  "statistical_verdict": "VERIFIED_STATISTICALLY_SIGNIFICANT (p < 1e-7)"
+}

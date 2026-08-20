@@ -1,0 +1,71 @@
+{
+  "metrics": [
+    {
+      "name": "Baseline Holdout A Pass Count",
+      "reported_value": 89,
+      "recomputed_value": 89,
+      "match": true
+    },
+    {
+      "name": "Baseline Holdout A Percentage",
+      "reported_value": 35.6,
+      "recomputed_value": 35.6,
+      "match": true
+    },
+    {
+      "name": "Winner Holdout A Pass Count",
+      "reported_value": 134,
+      "recomputed_value": 134,
+      "match": true
+    },
+    {
+      "name": "Winner Holdout A Percentage",
+      "reported_value": 53.6,
+      "recomputed_value": 53.6,
+      "match": true
+    },
+    {
+      "name": "Holdout A Delta Percentage Points",
+      "reported_value": 18.0,
+      "recomputed_value": 18.0,
+      "match": true
+    },
+    {
+      "name": "Winner Holdout B Percentage",
+      "reported_value": 42.0,
+      "recomputed_value": 42.0,
+      "match": true
+    },
+    {
+      "name": "Holdout B Delta Percentage Points",
+      "reported_value": 6.4,
+      "recomputed_value": 6.4,
+      "match": true
+    },
+    {
+      "name": "Human Evaluation Baseline Mean",
+      "reported_value": 0.72,
+      "recomputed_value": 0.72,
+      "match": true
+    },
+    {
+      "name": "Human Evaluation Winner Mean",
+      "reported_value": 0.8,
+      "recomputed_value": 0.8,
+      "match": true
+    },
+    {
+      "name": "Total Real LLM Calls",
+      "reported_value": 1265,
+      "recomputed_value": 1265,
+      "match": true
+    },
+    {
+      "name": "Total Cost USD",
+      "reported_value": 0.0557,
+      "recomputed_value": 0.0557,
+      "match": true
+    }
+  ],
+  "all_metrics_reconciled": true
+}

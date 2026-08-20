@@ -1,0 +1,9 @@
+{
+  "holdout_a_count": 250,
+  "holdout_b_count": 250,
+  "exact_query_overlap_count": 0,
+  "tri_gram_overlap_percentage": 0.0,
+  "entity_separation": "DISJOINT (Holdout A uses order numbers 1005-1250, Holdout B uses ORD-2000-2300)",
+  "paraphrase_variation": "Holdout B reformulates logistics tracking as commercial contract shipping",
+  "independence_status": "VERIFIED_INDEPENDENT"
+}

@@ -1,0 +1,14 @@
+{
+  "candidate_generator_inspected_file": "backend/services/candidate_generator.py",
+  "function_signature": "generate_candidate_configurations(parent_prompt, failure_patterns, immutable_constraints, candidate_count)",
+  "forbidden_tokens_accessed": {
+    "LivingBenchmarkCase": false,
+    "holdout_dataset_sealed.json": false,
+    "holdout_dataset_sealed_b.json": false,
+    "holdout_manifest.json": false,
+    "expected_output_criteria": false
+  },
+  "database_access_in_generator": false,
+  "filesystem_access_in_generator": false,
+  "isolation_verdict": "VERIFIED_STRICTLY_BLINDED"
+}

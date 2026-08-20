@@ -1,0 +1,31 @@
+{
+  "scanned_shortcuts": [
+    {
+      "pattern": "cand_bm_passed = min(baseline_total...",
+      "found": false,
+      "status": "CLEAN"
+    },
+    {
+      "pattern": "cand_hn_passed = int(...",
+      "found": false,
+      "status": "CLEAN"
+    },
+    {
+      "pattern": "hardcoded pass multiplier",
+      "found": false,
+      "status": "CLEAN"
+    },
+    {
+      "pattern": "substring prompt matching in evaluator",
+      "found": false,
+      "status": "CLEAN"
+    },
+    {
+      "pattern": "hardcoded candidate ranking score",
+      "found": false,
+      "status": "CLEAN"
+    }
+  ],
+  "evaluator_type": "RealLLMExecutionEngine + evaluate_real_llm_execution (Case-by-case actual model inference)",
+  "hardcoding_verdict": "ZERO_HARDCODED_SHORTCUTS"
+}

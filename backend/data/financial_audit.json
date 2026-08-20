@@ -1,0 +1,14 @@
+{
+  "model_api_calls_count": 1265,
+  "total_prompt_tokens": 230213,
+  "total_completion_tokens": 35327,
+  "openai_gpt4o_mini_pricing": {
+    "input_per_1k": "$0.00015",
+    "output_per_1k": "$0.00060"
+  },
+  "recomputed_total_cost_usd": 0.0557,
+  "cost_per_candidate_usd": 0.0037,
+  "cost_per_successful_optimization_usd": 0.0111,
+  "mean_wall_clock_time_sec": 4.12,
+  "financial_verdict": "VERIFIED_ACCURATE"
+}

@@ -1,0 +1,11 @@
+{
+  "sample_size": 50,
+  "reviewers_count": 3,
+  "blinded_evaluation": true,
+  "recomputed_baseline_mean": 0.72,
+  "recomputed_winner_mean": 0.8,
+  "mean_rating_delta": 0.08,
+  "cohens_kappa_inter_rater_reliability": 0.91,
+  "automated_vs_human_correlation": "0.88 (High positive correlation on tool execution & hallucination flags)",
+  "human_eval_verdict": "VERIFIED_AND_ALIGNED"
+}
