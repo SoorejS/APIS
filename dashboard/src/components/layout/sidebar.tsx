@@ -9,8 +9,10 @@ import {
   GitMerge,
   AlertTriangle,
   History,
-  TerminalSquare
+  TerminalSquare,
+  Sparkles
 } from "lucide-react";
+
 
 const navigation = [
   { name: "Overview", href: "/", icon: LayoutDashboard },
@@ -18,7 +20,9 @@ const navigation = [
   { name: "Prompts", href: "/prompts", icon: History },
   { name: "Failure Patterns", href: "/failures", icon: AlertTriangle },
   { name: "Living Evals", href: "/evals", icon: TerminalSquare },
+  { name: "Autonomous Optimizer", href: "/optimize", icon: Sparkles },
   { name: "Canary", href: "/canary", icon: GitMerge },
+
   { name: "Drift", href: "/drift", icon: AlertTriangle },
   { name: "Eval Proof", href: "/results", icon: Activity },
 ];

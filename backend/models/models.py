@@ -232,3 +232,82 @@ class AnalysisJob(Base):
     completed_at = Column(DateTime(timezone=True), nullable=True)
 
     namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])
+
+
+# ── V2 Autonomous Configuration Optimization Models ───────────────────────
+
+class ImmutableConstraint(Base):
+    __tablename__ = "immutable_constraints"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    namespace_id = Column(UUID(as_uuid=True), ForeignKey("prompt_namespaces.id"), nullable=False)
+    constraint_text = Column(Text, nullable=False)
+    is_active = Column(Boolean, default=True, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])
+
+
+class OptimizationExperiment(Base):
+    __tablename__ = "optimization_experiments"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    namespace_id = Column(UUID(as_uuid=True), ForeignKey("prompt_namespaces.id"), nullable=False)
+    parent_configuration_id = Column(UUID(as_uuid=True), ForeignKey("prompt_versions.id"), nullable=False)
+    benchmark_suite_id = Column(UUID(as_uuid=True), ForeignKey("benchmark_suites.id"), nullable=False)
+    holdout_version = Column(String(50), default="holdout_v1", nullable=False)
+    candidate_count = Column(Integer, default=0, nullable=False)
+    status = Column(String(50), default="queued", nullable=False)  # queued, generating_candidates, evaluating_stage_1, evaluating_stage_2, ranking, completed, failed
+    ranking_policy = Column(String(50), default="hierarchical_quality_first", nullable=False)
+    promotion_thresholds = Column(JSON, nullable=True)  # {"min_benchmark_improvement_count": 1, "max_holdout_drop_count": 0, "max_hard_neg_drop_count": 0}
+    selected_candidate_id = Column(UUID(as_uuid=True), nullable=True)
+    baseline_benchmark_passed = Column(Integer, default=0, nullable=False)
+    baseline_benchmark_total = Column(Integer, default=0, nullable=False)
+    baseline_holdout_passed = Column(Integer, default=0, nullable=False)
+    baseline_holdout_total = Column(Integer, default=0, nullable=False)
+    best_candidate_score = Column(Float, default=0.0, nullable=False)
+    improvement_delta = Column(Float, default=0.0, nullable=False)
+    total_cost = Column(Float, default=0.0, nullable=False)
+    total_latency_ms = Column(Integer, default=0, nullable=False)
+    idempotency_hash = Column(String(128), index=True, nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    completed_at = Column(DateTime(timezone=True), nullable=True)
+
+    namespace = relationship("PromptNamespace", foreign_keys=[namespace_id])
+    benchmark_suite = relationship("BenchmarkSuite", foreign_keys=[benchmark_suite_id])
+    candidates = relationship("CandidateConfiguration", back_populates="experiment")
+
+
+class CandidateConfiguration(Base):
+    __tablename__ = "candidate_configurations"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    experiment_id = Column(UUID(as_uuid=True), ForeignKey("optimization_experiments.id"), nullable=False)
+    parent_configuration_id = Column(UUID(as_uuid=True), ForeignKey("prompt_versions.id"), nullable=False)
+    prompt_content = Column(Text, nullable=False)
+    hypothesis = Column(Text, nullable=False)
+    target_failure_patterns = Column(JSON, nullable=True)  # Array of Pattern IDs
+    proposed_change = Column(Text, nullable=False)
+    expected_effect = Column(Text, nullable=False)
+    potential_risk = Column(Text, nullable=False)
+    status = Column(String(50), default="candidate", nullable=False)  # candidate, evaluating_stage_1, evaluating_stage_2, promoted, rejected, failed
+    benchmark_passed = Column(Integer, default=0, nullable=False)
+    benchmark_total = Column(Integer, default=0, nullable=False)
+    benchmark_score = Column(Float, default=0.0, nullable=False)
+    regression_score = Column(Float, default=0.0, nullable=False)
+    edge_case_score = Column(Float, default=0.0, nullable=False)
+    hard_negative_score = Column(Float, default=0.0, nullable=False)
+    holdout_passed = Column(Integer, nullable=True)
+    holdout_total = Column(Integer, nullable=True)
+    holdout_score = Column(Float, nullable=True)
+    baseline_latency_ms = Column(Integer, default=250, nullable=False)
+    candidate_latency_ms = Column(Integer, default=250, nullable=False)
+    baseline_token_cost = Column(Float, default=0.001, nullable=False)
+    candidate_token_cost = Column(Float, default=0.001, nullable=False)
+    efficiency_score = Column(Float, default=0.0, nullable=False)
+    ranking_score = Column(Float, default=0.0, nullable=False)
+    rejection_stage = Column(String(50), nullable=True)  # stage_1_benchmark, stage_2_holdout, constraint_violation
+    rejection_reason = Column(Text, nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    experiment = relationship("OptimizationExperiment", back_populates="candidates")

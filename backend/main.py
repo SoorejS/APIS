@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from backend.api.v1 import runtime, feedback, prompts, iterations, evaluations, dashboard, failures
+from backend.api.v2 import optimize
 from backend.db.database import engine, Base
 
 
@@ -16,7 +17,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="APIS Engine",
     description="Adaptive Prompt Intelligence System — Runtime, Feedback, and Admin APIs",
-    version="0.1.0",
+    version="0.2.0",
     lifespan=lifespan,
 )
 
@@ -37,6 +38,8 @@ app.include_router(iterations.router,  prefix="/api/v1",           tags=["Admin 
 app.include_router(evaluations.router, prefix="/api/v1",           tags=["Admin — Evaluations"])
 app.include_router(dashboard.router,   prefix="/api/v1/dashboard", tags=["Dashboard"])
 app.include_router(failures.router,    prefix="/api/v1/failures",  tags=["Failure Intelligence"])
+app.include_router(optimize.router,    prefix="/api/v2/optimize",  tags=["Autonomous Optimizer (V2)"])
+
 
 
 @app.get("/health", tags=["Health"])

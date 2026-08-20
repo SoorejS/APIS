@@ -146,19 +146,72 @@ export async function pollAnalysisJob(job_id: string) {
   return res.json();
 }
 
+export async function evaluateBenchmarkSuite(suite_id: string, prompt_version_id: string, model_name?: string) {
+  const res = await fetch(`${API_BASE_URL}/failures/benchmarks/evaluate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ suite_id, prompt_version_id, model_name: model_name || "gpt-4o-mini" }),
+  });
+  if (!res.ok) {
+    throw new Error("Failed to evaluate benchmark suite");
+  }
+  return res.json();
+}
+
 export async function evaluatePromptOnBenchmark(payload: {
   namespace_id: string;
   prompt_version_id: string;
   suite_id: string;
 }) {
-  const res = await fetch(`${API_BASE_URL}/failures/benchmarks/evaluate`, {
+  return evaluateBenchmarkSuite(payload.suite_id, payload.prompt_version_id);
+}
+
+
+// ── V2 Autonomous Optimization APIs ──────────────────────────────────────────
+
+export async function triggerAutonomousOptimization(payload: {
+  namespace_id: string;
+  parent_configuration_id: string;
+  benchmark_suite_id: string;
+  candidate_count?: number;
+}) {
+  const baseUrl = API_BASE_URL.replace("/v1", "/v2");
+  const res = await fetch(`${baseUrl}/optimize`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
+    body: JSON.stringify({
+      namespace_id: payload.namespace_id,
+      parent_configuration_id: payload.parent_configuration_id,
+      benchmark_suite_id: payload.benchmark_suite_id,
+      candidate_count: payload.candidate_count || 3,
+      ranking_policy: "hierarchical_quality_first",
+      promotion_thresholds: {
+        min_benchmark_improvement_count: 1,
+        max_holdout_drop_count: 0,
+        max_hard_neg_drop_count: 0,
+      },
+    }),
   });
   if (!res.ok) {
-    throw new Error("Failed to run benchmark evaluation");
+    throw new Error("Failed to trigger autonomous optimization");
   }
   return res.json();
 }
 
+export async function fetchOptimizationExperiment(experiment_id: string) {
+  const baseUrl = API_BASE_URL.replace("/v1", "/v2");
+  const res = await fetch(`${baseUrl}/optimize/${experiment_id}`);
+  if (!res.ok) {
+    throw new Error("Failed to fetch optimization experiment");
+  }
+  return res.json();
+}
+
+export async function fetchOptimizationComparison(experiment_id: string) {
+  const baseUrl = API_BASE_URL.replace("/v1", "/v2");
+  const res = await fetch(`${baseUrl}/optimize/${experiment_id}/comparison`);
+  if (!res.ok) {
+    throw new Error("Failed to fetch optimization comparison");
+  }
+  return res.json();
+}
