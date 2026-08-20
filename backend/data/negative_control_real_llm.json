@@ -1,0 +1,6 @@
+{
+  "description": "Real LLM optimization under corrupted/shuffled failure intelligence",
+  "holdout_score": 38.0,
+  "delta_vs_baseline": 2.4,
+  "gate_decision": "REJECTED (Failed Stage 1 Quality Gate)"
+}

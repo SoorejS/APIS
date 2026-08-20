@@ -1,0 +1,352 @@
+[
+  {
+    "case_id": "ho_cs_106",
+    "query": "What is your overnight express return window for recent purchases like order #1221?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 0.33,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_125",
+    "query": "Is the legacy model PRO-2019 available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_136",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_094",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1089?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 0.33,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_054",
+    "query": "Can you check the current delivery timeline for order #1218 and order #1139?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_016",
+    "query": "Can you check the current delivery timeline for order #1188 and order #1089?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_134",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_014",
+    "query": "Can you check the current delivery timeline for order #1200 and order #1209?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_095",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1233?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 0.33,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_128",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_146",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_235",
+    "query": "Where is package #1070 currently located?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_214",
+    "query": "Order #1009 is already in transit with FedEx. Please cancel the package immediately.",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_098",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1023?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 0.33,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_019",
+    "query": "Can you check the current delivery timeline for order #1236 and order #1005?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_167",
+    "query": "Extract the order ID #1202 and carrier details as raw parseable JSON only.",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_077",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1156?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 0.33,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_129",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_247",
+    "query": "Where is package #1210 currently located?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_071",
+    "query": "What is your cancellation procedures for orders placed before 2 PM for recent purchases like order #1178?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 0.33,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_073",
+    "query": "What is your cancellation procedures for orders placed before 2 PM for recent purchases like order #1089?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 0.33,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_194",
+    "query": "Extract the order ID #1075 and carrier details as raw parseable JSON only.",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_242",
+    "query": "Where is package #1208 currently located?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_157",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_021",
+    "query": "Can you check the current delivery timeline for order #1127 and order #1224?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_205",
+    "query": "Order #1114 is already in transit with FedEx. Please cancel the package immediately.",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_220",
+    "query": "Order #1111 is already in transit with FedEx. Please cancel the package immediately.",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_096",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1085?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 0.33,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_249",
+    "query": "Where is package #1157 currently located?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_213",
+    "query": "Order #1158 is already in transit with FedEx. Please cancel the package immediately.",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_060",
+    "query": "Can you check the current delivery timeline for order #1070 and order #1088?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_118",
+    "query": "What is your international freight forwarding policies for recent purchases like order #1145?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 0.33,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_226",
+    "query": "Order #1130 is already in transit with FedEx. Please cancel the package immediately.",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_237",
+    "query": "Where is package #1143 currently located?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_122",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_236",
+    "query": "Where is package #1150 currently located?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_243",
+    "query": "Where is package #1077 currently located?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_004",
+    "query": "Can you check the current delivery timeline for order #1086 and order #1206?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_127",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_013",
+    "query": "Can you check the current delivery timeline for order #1016 and order #1227?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_126",
+    "query": "Is the legacy model PRO-2020 available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_017",
+    "query": "Can you check the current delivery timeline for order #1064 and order #1131?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_228",
+    "query": "Order #1055 is already in transit with FedEx. Please cancel the package immediately.",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_130",
+    "query": "Is the legacy model PRO-2018 available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_156",
+    "query": "Is the legacy model APEX-V1-DISCONTINUED available for immediate warehouse dispatch, and how much does it cost?",
+    "baseline_mean_score": 1.0,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_104",
+    "query": "What is your standard ground shipping to Oregon for recent purchases like order #1134?",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_029",
+    "query": "Can you check the current delivery timeline for order #1088 and order #1230?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_046",
+    "query": "Can you check the current delivery timeline for order #1154 and order #1152?",
+    "baseline_mean_score": 0.67,
+    "winner_mean_score": 0.67,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_183",
+    "query": "Extract the order ID #1107 and carrier details as raw parseable JSON only.",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  },
+  {
+    "case_id": "ho_cs_196",
+    "query": "Extract the order ID #1059 and carrier details as raw parseable JSON only.",
+    "baseline_mean_score": 0.33,
+    "winner_mean_score": 1.0,
+    "inter_rater_agreement": "HIGH (Cohen's Kappa = 0.91)"
+  }
+]

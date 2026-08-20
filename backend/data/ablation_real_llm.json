@@ -1,0 +1,18 @@
+{
+  "Condition_A_Naive": {
+    "holdout_score": 27.6,
+    "delta": -8.0
+  },
+  "Condition_B_Random": {
+    "holdout_score": 25.6,
+    "delta": -10.0
+  },
+  "Condition_C_Patterns_Only": {
+    "holdout_score": 55.6,
+    "delta": 20.0
+  },
+  "Condition_D_Full_APIS_V2": {
+    "holdout_score": 53.6,
+    "delta": 18.0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "total_model_api_calls": 1265,
+  "total_tokens_in": 230213,
+  "total_tokens_out": 35327,
+  "total_cost_usd": 0.0557,
+  "cost_per_candidate": 0.0037,
+  "cost_per_successful_optimization": 0.0111,
+  "mean_wall_clock_time_per_run_sec": 4.12
+}
